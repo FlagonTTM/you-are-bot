@@ -1,0 +1,52 @@
+{
+  "botbench.py": {
+    "sha256": "eefbceba31ae9926b84baebecf23b6b2d797415e555c116f9e043461bcf53c3c",
+    "bytes": 11721,
+    "origin": "original_session/botbench.py"
+  },
+  "experiment.py": {
+    "sha256": "950c028539c42550643c3beb3b8b391361a00658680fcac065a2a5160dfe159f",
+    "bytes": 11127,
+    "origin": "original_session/experiment.py"
+  },
+  "llm_bridge.py": {
+    "sha256": "63821f37719cae16c335f20a39862a8e53cc5a662948701f122d326acc925f6d",
+    "bytes": 12405,
+    "origin": "original_session/llm_bridge.py"
+  },
+  "finalize.py": {
+    "sha256": "46e5e77bfa1cb029dc544ba2750e7683bd380cfdf5fec7486f204787d1d8d40c",
+    "bytes": 9234,
+    "origin": "original_session/finalize.py"
+  },
+  "campaign.py": {
+    "sha256": "5db061bc3f97a8c12a29c82c4d783515e4277e16a42b55a6e17aa1741d2e2168",
+    "bytes": 9315,
+    "origin": "original_session/campaign.py"
+  },
+  "research/anchoring_ab.py": {
+    "sha256": "8626913e6c0362c5bc165b12e1e4ee55089cf9dcc872e3d9eafae42fba343703",
+    "bytes": 9232,
+    "origin": "original_session/research/anchoring_ab.py"
+  },
+  "research/template_text.py": {
+    "sha256": "d2ee65ef1c6fff01cd9d9c6fda528639561e0fbb806e33dceaee3b103759009e",
+    "bytes": 3838,
+    "origin": "original_session/research/template_text.py"
+  },
+  "research/sequence_probe.py": {
+    "sha256": "6f7ee1315c5cfe9a1867a26eecc84895a8388e0fd809900929fd408e769bbe18",
+    "bytes": 26096,
+    "origin": "original_session/research/sequence_probe.py"
+  },
+  "research/encoder_probe.py": {
+    "sha256": "f599d2397b9e75164018277ad57d930a2cd74a2493a77bb5474c50205e411124",
+    "bytes": 41512,
+    "origin": "original_session/research/encoder_probe.py"
+  },
+  "research/encoder_assets.py": {
+    "sha256": "f21ae0f1eae6b6d0f94d4fe60851f34f02cc389d1e2da9876bddb739e9c08fb8",
+    "bytes": 8489,
+    "origin": "original_session/research/encoder_assets.py"
+  }
+}

@@ -1,0 +1,8 @@
+# Public direct runtime + unit-test roots. No global-environment freeze.
+numpy==2.2.6
+scipy==1.14.1
+scikit-learn==1.5.2
+catboost==1.2.8
+joblib==1.5.1
+packaging==24.2
+pytest==8.3.5

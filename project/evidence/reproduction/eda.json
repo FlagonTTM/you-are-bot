@@ -1,0 +1,410 @@
+{
+  "membership": {
+    "confirmation_rows": 616,
+    "dev_rows": 2416,
+    "fold_rows": {
+      "0": 488,
+      "1": 492,
+      "2": 478,
+      "3": 480,
+      "4": 478
+    },
+    "grouping": "Exact dialog content + explicit serialized UUID references; connected components never cross CV folds."
+  },
+  "note": "Only aggregates. Official test labels unavailable; no test class/pair estimates.",
+  "public_safe": true,
+  "schema": "coursework.eda.v1",
+  "test": {
+    "component_participant_rows_histogram": {
+      "2": 379
+    },
+    "dialog_messages": {
+      "count": 379,
+      "histogram": {
+        "counts": [
+          0,
+          86,
+          225,
+          60,
+          6,
+          2,
+          0
+        ],
+        "edges": [
+          0,
+          2,
+          5,
+          10,
+          20,
+          50,
+          100,
+          101
+        ],
+        "note": "Last finite edge is expanded to cover all observed values."
+      },
+      "max": 87.0,
+      "mean": 7.485488126649076,
+      "median": 6.0,
+      "min": 2.0,
+      "quantiles": {
+        "0.1": 3.0,
+        "0.25": 5.0,
+        "0.75": 9.0,
+        "0.9": 11.0,
+        "0.99": 43.0
+      }
+    },
+    "dialogs": 379,
+    "dialogs_with_same_speaker_adjacency": 36,
+    "empty_messages": 1,
+    "exact_duplicate_content_clusters": 0,
+    "exact_duplicate_excess_dialogs": 0,
+    "leading_whitespace_messages": 7,
+    "message_chars": {
+      "count": 2837,
+      "histogram": {
+        "counts": [
+          1,
+          691,
+          1489,
+          457,
+          116,
+          57,
+          18,
+          5,
+          3,
+          0
+        ],
+        "edges": [
+          0,
+          1,
+          5,
+          20,
+          50,
+          100,
+          200,
+          500,
+          1000,
+          5000,
+          5001
+        ],
+        "note": "Last finite edge is expanded to cover all observed values."
+      },
+      "max": 3782.0,
+      "mean": 21.76876982728234,
+      "median": 9.0,
+      "min": 0.0,
+      "quantiles": {
+        "0.1": 2.0,
+        "0.25": 5.0,
+        "0.75": 18.0,
+        "0.9": 36.0,
+        "0.99": 185.27999999999975
+      }
+    },
+    "message_words": {
+      "count": 2837,
+      "histogram": {
+        "counts": [
+          38,
+          2279,
+          444,
+          66,
+          5,
+          5,
+          0
+        ],
+        "edges": [
+          0,
+          1,
+          5,
+          20,
+          50,
+          100,
+          500,
+          501
+        ],
+        "note": "Last finite edge is expanded to cover all observed values."
+      },
+      "max": 269.0,
+      "mean": 3.7652449770884737,
+      "median": 2.0,
+      "min": 0.0,
+      "quantiles": {
+        "0.1": 1.0,
+        "0.25": 1.0,
+        "0.75": 4.0,
+        "0.9": 7.0,
+        "0.99": 32.63999999999987
+      }
+    },
+    "messages": 2837,
+    "missing_fields": 0,
+    "newline_messages": 146,
+    "participant_chars": {
+      "count": 758,
+      "histogram": {
+        "counts": [
+          0,
+          468,
+          224,
+          63,
+          3,
+          0,
+          0
+        ],
+        "edges": [
+          0,
+          1,
+          50,
+          200,
+          1000,
+          5000,
+          12000,
+          12001
+        ],
+        "note": "Last finite edge is expanded to cover all observed values."
+      },
+      "max": 4431.0,
+      "mean": 84.21767810026385,
+      "median": 37.0,
+      "min": 2.0,
+      "quantiles": {
+        "0.1": 10.0,
+        "0.25": 20.0,
+        "0.75": 70.0,
+        "0.9": 171.20000000000027,
+        "0.99": 705.43
+      }
+    },
+    "participant_rows": 758,
+    "raw_schema": {
+      "dialog_uuid_version_counts": {
+        "4": 379
+      },
+      "message_field_sets": [
+        [
+          "message",
+          "participant_index",
+          "text"
+        ]
+      ],
+      "message_numbers_contiguous": true,
+      "participant_indices": [
+        0,
+        1
+      ]
+    },
+    "same_speaker_adjacent_pairs": 38,
+    "serialized_dialog_reference_messages": 4,
+    "trailing_whitespace_messages": 120,
+    "unique_components": 379,
+    "unique_exact_dialog_contents": 379,
+    "uuid_mentions": 4,
+    "whitespace_only_messages": 2
+  },
+  "train": {
+    "class_counts": {
+      "0": 1795,
+      "1": 1237
+    },
+    "component_participant_rows_histogram": {
+      "2": 1478,
+      "4": 16,
+      "6": 2
+    },
+    "dialog_messages": {
+      "count": 1516,
+      "histogram": {
+        "counts": [
+          0,
+          448,
+          830,
+          211,
+          23,
+          3,
+          1
+        ],
+        "edges": [
+          0,
+          2,
+          5,
+          10,
+          20,
+          50,
+          100,
+          138
+        ],
+        "note": "Last finite edge is expanded to cover all observed values."
+      },
+      "max": 137.0,
+      "mean": 6.919525065963061,
+      "median": 6.0,
+      "min": 2.0,
+      "quantiles": {
+        "0.1": 3.0,
+        "0.25": 4.0,
+        "0.75": 9.0,
+        "0.9": 11.0,
+        "0.99": 23.0
+      }
+    },
+    "dialogs": 1516,
+    "dialogs_with_same_speaker_adjacency": 147,
+    "empty_messages": 1,
+    "exact_duplicate_content_clusters": 4,
+    "exact_duplicate_excess_dialogs": 6,
+    "leading_whitespace_messages": 72,
+    "message_chars": {
+      "count": 10490,
+      "histogram": {
+        "counts": [
+          1,
+          2639,
+          5571,
+          1491,
+          365,
+          294,
+          105,
+          6,
+          14,
+          4
+        ],
+        "edges": [
+          0,
+          1,
+          5,
+          20,
+          50,
+          100,
+          200,
+          500,
+          1000,
+          5000,
+          65827
+        ],
+        "note": "Last finite edge is expanded to cover all observed values."
+      },
+      "max": 65826.0,
+      "mean": 31.942040038131555,
+      "median": 8.0,
+      "min": 0.0,
+      "quantiles": {
+        "0.1": 3.0,
+        "0.25": 4.0,
+        "0.75": 17.0,
+        "0.9": 37.0,
+        "0.99": 222.0
+      }
+    },
+    "message_words": {
+      "count": 10490,
+      "histogram": {
+        "counts": [
+          137,
+          8620,
+          1368,
+          330,
+          20,
+          15,
+          0
+        ],
+        "edges": [
+          0,
+          1,
+          5,
+          20,
+          50,
+          100,
+          500,
+          501
+        ],
+        "note": "Last finite edge is expanded to cover all observed values."
+      },
+      "max": 456.0,
+      "mean": 3.9451858913250715,
+      "median": 2.0,
+      "min": 0.0,
+      "quantiles": {
+        "0.1": 1.0,
+        "0.25": 1.0,
+        "0.75": 3.0,
+        "0.9": 7.0,
+        "0.99": 34.0
+      }
+    },
+    "messages": 10490,
+    "missing_fields": 0,
+    "newline_messages": 576,
+    "pair_types": {
+      "human_bot": 1237,
+      "human_human": 279
+    },
+    "participant_chars": {
+      "count": 3032,
+      "histogram": {
+        "counts": [
+          0,
+          2031,
+          785,
+          189,
+          22,
+          3,
+          2
+        ],
+        "edges": [
+          0,
+          1,
+          50,
+          200,
+          1000,
+          5000,
+          12000,
+          65839
+        ],
+        "note": "Last finite edge is expanded to cover all observed values."
+      },
+      "max": 65838.0,
+      "mean": 112.97163588390501,
+      "median": 33.0,
+      "min": 1.0,
+      "quantiles": {
+        "0.1": 8.0,
+        "0.25": 18.0,
+        "0.75": 60.0,
+        "0.9": 130.0,
+        "0.99": 892.5400000000036
+      }
+    },
+    "participant_rows": 3032,
+    "raw_schema": {
+      "dialog_uuid_version_counts": {
+        "4": 1516
+      },
+      "message_field_sets": [
+        [
+          "message",
+          "participant_index",
+          "text"
+        ]
+      ],
+      "message_numbers_contiguous": true,
+      "participant_indices": [
+        0,
+        1
+      ]
+    },
+    "same_speaker_adjacent_pairs": 163,
+    "serialized_dialog_reference_messages": 23,
+    "trailing_whitespace_messages": 445,
+    "unique_components": 1496,
+    "unique_exact_dialog_contents": 1510,
+    "uuid_mentions": 23,
+    "whitespace_only_messages": 10
+  },
+  "train_vs_test": {
+    "dialog_length_mean_delta_test_minus_train": 0.5659630606860153,
+    "exact_content_overlap_dialogs": 0,
+    "message_length_mean_delta_test_minus_train": -10.173270210849214
+  }
+}

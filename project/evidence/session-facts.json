@@ -1,0 +1,224 @@
+{
+  "schema": "you-are-bot.coursework.facts.v1",
+  "train": {
+    "dialogues": 1516,
+    "participant_rows": 3032,
+    "messages": 10490,
+    "components": 1496,
+    "unique_exact_dialogues": 1510,
+    "length_histogram": {
+      "2–5": 693,
+      "6–9": 585,
+      "10–19": 211,
+      "20+": 27
+    },
+    "min_messages": 2,
+    "max_messages": 137,
+    "median_messages": 6,
+    "empty_or_whitespace_messages": 11,
+    "same_speaker_consecutive_dialogues": 147
+  },
+  "test": {
+    "dialogues": 379,
+    "participant_rows": 758,
+    "messages": 2837,
+    "components": 379,
+    "unique_exact_dialogues": 379,
+    "length_histogram": {
+      "2–5": 156,
+      "6–9": 155,
+      "10–19": 60,
+      "20+": 8
+    },
+    "min_messages": 2,
+    "max_messages": 87,
+    "median_messages": 6,
+    "empty_or_whitespace_messages": 3,
+    "same_speaker_consecutive_dialogues": 36
+  },
+  "train_class_counts": {
+    "1": 1237,
+    "0": 1795
+  },
+  "train_label_pairs": {
+    "10": 752,
+    "00": 279,
+    "01": 485
+  },
+  "split_rows": {
+    "-1": 616,
+    "4": 478,
+    "3": 480,
+    "1": 492,
+    "0": 488,
+    "2": 478
+  },
+  "development_rows": 2416,
+  "confirmation_rows": 616,
+  "models": [
+    {
+      "id": "behavior-v2",
+      "label": "Числовые признаки",
+      "logloss": 0.2038164751661042,
+      "auc": 0.975013501222216,
+      "contour": "development5fold",
+      "rows": 2416,
+      "source": "evidence/history/behavior-v2-report.json",
+      "source_sha256": "0f5d66cacccec013ed0f0ad2057598d1cb0d6f0d44ac7a2e90f39af4214f03f7"
+    },
+    {
+      "id": "lexical-v1",
+      "label": "TF-IDF + LogReg",
+      "logloss": 0.20626558219015353,
+      "auc": 0.9732647376499346,
+      "contour": "development5fold",
+      "rows": 2416,
+      "source": "evidence/history/lexical-v1-report.json",
+      "source_sha256": "2149b9884a0798d46210118b6d184f6d8b04c40485540e24332fb3e5cf2126ec"
+    },
+    {
+      "id": "hybrid-v1",
+      "label": "Текст + числовые",
+      "logloss": 0.1988491775114915,
+      "auc": 0.9753240293331817,
+      "contour": "development5fold",
+      "rows": 2416,
+      "source": "evidence/history/hybrid-v1-report.json",
+      "source_sha256": "5f0353261124611d4bd9bcf8f7511f30d8a2d4450daa34b6a3b7d4d7ba587157"
+    },
+    {
+      "id": "template-v1",
+      "label": "Шаблоны + CatBoost",
+      "logloss": 0.16919850572003053,
+      "auc": 0.98174990051731,
+      "contour": "development5fold",
+      "rows": 2416,
+      "source": "evidence/history/template-v1-report.json",
+      "source_sha256": "3bc1d9dd13e77ded67e2ec89837b8e8fec537bb2832a82abd5612788824adf21"
+    },
+    {
+      "id": "template-text-v2",
+      "label": "Полный банк + native text",
+      "logloss": 0.1769927192742489,
+      "auc": 0.9800899607753966,
+      "contour": "development5fold",
+      "rows": 2416,
+      "source": "evidence/history/template-text-v2-report.json",
+      "source_sha256": "2e7b5021abec38ab2bc71cc5d38080dbbe428d5f62cf1d2a87ba4a46ae9a032e"
+    },
+    {
+      "id": "sequence-full-v2",
+      "label": "ByteCNN + GRU, смесь",
+      "logloss": 0.17236762380768159,
+      "auc": 0.981613467113865,
+      "contour": "development5fold",
+      "rows": 2416,
+      "source": "evidence/history/sequence-full-report.json",
+      "source_sha256": "d6c95c0faf4c6a89c02e2fc9709f53f545663257df39378e9dda4adafea26a36"
+    }
+  ],
+  "confirmation": {
+    "phase": "single_confirmation",
+    "recipe": "0.5*template + 0.5*llm",
+    "against_template": {
+      "base_logloss": 0.16329557818475118,
+      "candidate_logloss": 0.1509737977745541,
+      "delta_candidate_minus_base": -0.012321780410197065,
+      "group_bootstrap_95pct_interval": [
+        -0.02039207307560603,
+        -0.006646366638856782
+      ],
+      "participant_better": 354,
+      "participant_worse": 262,
+      "n_rows": 616,
+      "n_components": 302
+    },
+    "against_behavior": {
+      "base_logloss": 0.19710461042189698,
+      "candidate_logloss": 0.1509737977745541,
+      "delta_candidate_minus_base": -0.046130812647342874,
+      "group_bootstrap_95pct_interval": [
+        -0.06623743146180419,
+        -0.02788012905633046
+      ],
+      "participant_better": 307,
+      "participant_worse": 309,
+      "n_rows": 616,
+      "n_components": 302
+    },
+    "verdict": "VALIDATED"
+  },
+  "last_encoder_pilot": {
+    "metrics": {
+      "raw_encoder": {
+        "logloss": 0.21102416553125614,
+        "auc": 0.9771159874608151
+      },
+      "native": {
+        "logloss": 0.17137512774894437,
+        "auc": 0.9826018808777429
+      },
+      "h8_hardsequence": {
+        "logloss": 0.1510649054512358,
+        "auc": 0.9854580285614769
+      },
+      "primary": {
+        "logloss": 0.17309318680990818,
+        "auc": 0.9816266109369558
+      }
+    },
+    "comparisons": {
+      "native": {
+        "base_logloss": 0.17137512774894437,
+        "candidate_logloss": 0.17309318680990818,
+        "delta_candidate_minus_base": 0.001718059060963769,
+        "group_bootstrap_95pct_interval": [
+          -0.016324730926299456,
+          0.017852357822173173
+        ],
+        "participant_better": 306,
+        "participant_worse": 182,
+        "n_rows": 488,
+        "n_components": 240
+      },
+      "h8_hardsequence": {
+        "base_logloss": 0.1510649054512358,
+        "candidate_logloss": 0.17309318680990818,
+        "delta_candidate_minus_base": 0.022028281358672356,
+        "group_bootstrap_95pct_interval": [
+          -0.0037258565191295168,
+          0.04662170427324228
+        ],
+        "participant_better": 52,
+        "participant_worse": 436,
+        "n_rows": 488,
+        "n_components": 240
+      }
+    },
+    "admit_other_folds": false,
+    "wall_seconds": 609.9691524170339
+  },
+  "official": {
+    "submission_id": 10588,
+    "public_logloss": 0.1303426569,
+    "observed_rank": 5,
+    "observed_display_time": "23/10/2026, 18:40",
+    "artifact_sha256": "4bde02a00f00d009ad69c3aa967c00e468a41c0bcb2b90f65b93416abb3d4639",
+    "first_place_achieved": false
+  },
+  "data_hashes": {
+    "sample_submission.csv": "bf0ecf417e9ed88001370c437949c7540c09449c0b3e5f9746627c67ec1b503f",
+    "test.json": "a330a9e00e724cb6fe3541d89b9646ab2aef83c025f0b0bcc24811ceddedf428",
+    "train.json": "ca3795aa47b8791174a9225a1fe3219684dc388c88922053afdab411bf44ea34",
+    "ytest.csv": "46463c8de28dbbeaa3b0e763c62c1a4a8b251e9df9c79c9e64a559224fe8e7aa",
+    "ytrain.csv": "7977ce4773cade43f27459711b2ca943addf284cd6c0ea9b830c71ebc7d5b233"
+  },
+  "membership_sha256": "e553e7bcdfa98b398b0a534a5d9fc095c5a19f60054f87c365cbe705d6b04dee",
+  "interpretation_notes": [
+    "message is order, not timestamp",
+    "participant_index is local role, not global author",
+    "train 11=0 is observation, not constraint on test",
+    "public, confirmation, 5fold and singlefold metrics are different contours",
+    "HTTP service architecture is a sketch, not a deployed service"
+  ]
+}

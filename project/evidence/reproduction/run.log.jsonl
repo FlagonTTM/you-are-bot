@@ -1,0 +1,14 @@
+{"utc": "2026-10-24T14:53:17.620687+00:00", "stage": "created"}
+{"utc": "2026-10-24T14:53:17.620778+00:00", "stage": "preflight_source"}
+{"utc": "2026-10-24T14:53:17.636756+00:00", "stage": "preflight_environment"}
+{"utc": "2026-10-24T14:53:17.688773+00:00", "stage": "preflight_data"}
+{"utc": "2026-10-24T14:53:17.750509+00:00", "stage": "eda"}
+{"utc": "2026-10-24T14:53:17.800779+00:00", "stage": "fit_fold_0", "training_rows": 1928, "validation_rows": 488}
+{"utc": "2026-10-24T14:53:22.567192+00:00", "stage": "fit_fold_1", "training_rows": 1924, "validation_rows": 492}
+{"utc": "2026-10-24T14:53:27.144027+00:00", "stage": "fit_fold_2", "training_rows": 1938, "validation_rows": 478}
+{"utc": "2026-10-24T14:53:31.726278+00:00", "stage": "fit_fold_3", "training_rows": 1936, "validation_rows": 480}
+{"utc": "2026-10-24T14:53:36.368620+00:00", "stage": "fit_fold_4", "training_rows": 1938, "validation_rows": 478}
+{"utc": "2026-10-24T14:53:40.854714+00:00", "stage": "full_refit", "train_rows": 3032, "test_rows": 758}
+{"utc": "2026-10-24T14:53:46.639931+00:00", "stage": "pipeline_artifacts_ready", "seconds": 28.890630250331014}
+{"utc": "2026-10-24T14:53:46.664059+00:00", "stage": "verify_immutable_inputs_and_source"}
+{"utc": "2026-10-24T14:53:46.669769+00:00", "stage": "pipeline_finished"}

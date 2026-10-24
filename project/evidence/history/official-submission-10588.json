@@ -1,0 +1,74 @@
+{
+  "description": "Hermes v1: temporal-template CatBoost + LLM 50/50; grouped validation; SHA256 4bde02a00f00d009ad69c3aa967c00e468a41c0bcb2b90f65b93416abb3d4639",
+  "download_url": "https://stackmorelayers.ai/api/platform/v1/submissions/10588/download",
+  "filename": "submission.csv",
+  "leaderboard_url": "https://stackmorelayers.ai/competitions/you-are-bot/leaderboard",
+  "own_leaderboard_cells": [
+    "5",
+    "Иван Курбан\nВЫ",
+    "0.1303",
+    "1",
+    "23/10/2026, 18:40"
+  ],
+  "scores": [
+    {
+      "column_key": "logloss_public",
+      "id": 18148,
+      "index": 0,
+      "is_primary": true,
+      "precision": 4,
+      "score": "0.1303426569",
+      "visibility": "public"
+    }
+  ],
+  "status": "scored",
+  "submission_api_url": "https://stackmorelayers.ai/api/platform/v1/submissions/10588",
+  "submission_id": 10588,
+  "top_five_display_rows": [
+    [
+      "",
+      "Артём Бутомов",
+      "0.0928",
+      "3",
+      "10/10/2026, 22:13"
+    ],
+    [
+      "2",
+      "Анна Махонина",
+      "0.0993",
+      "3",
+      "07/10/2026, 01:07"
+    ],
+    [
+      "3",
+      "Михаил Гаврилов",
+      "0.1059",
+      "2",
+      "23/10/2026, 02:26"
+    ],
+    [
+      "4",
+      "Dmitrii Chekhlov",
+      "0.1089",
+      "1",
+      "13/09/2026, 09:27"
+    ],
+    [
+      "5",
+      "Иван Курбан\nВЫ",
+      "0.1303",
+      "1",
+      "23/10/2026, 18:40"
+    ]
+  ],
+  "viewport": {
+    "height": 768,
+    "width": 1272
+  },
+  "artifact_sha256": "4bde02a00f00d009ad69c3aa967c00e468a41c0bcb2b90f65b93416abb3d4639",
+  "remote_download_sha256_verified": true,
+  "authorized_uploads_used": 1,
+  "additional_uploads_authorized": false,
+  "private_score": "NOT_OBSERVABLE",
+  "first_place_achieved": false
+}

@@ -1,0 +1,20 @@
+{
+  "artifact": "project/report.html",
+  "artifact_sha256": "bc5dcabae3c9aa20759f87541d58bfcd749e4f32077e664f371366e4a7947ad7",
+  "browser_method": "direct opencli --profile v55e6gvm",
+  "session": "coursework-html",
+  "url": "http://127.0.0.1:8765/report.html",
+  "viewport": {"width": 1272, "height": 816, "device_pixel_ratio": 2},
+  "content_parity": "PASS: builder independently rerun; 14 sections, 7 inline SVG, 49 unique IDs, 6 exact model metrics, 8 histogram bars, 16 SHA-bound sources",
+  "runtime": "PASS: expected title and rendered report observed; console count 0",
+  "layout": "PASS_WITH_HORIZONTAL_DIAGRAM_SCROLL: all 14 sections visible; document scrollWidth=clientWidth=1272; two wide diagrams have their own scroll containers",
+  "body_font_px": 22,
+  "interaction": "PASS: real TOC click led to #models (top=55.9375); six SVG bars; Sources dialog opened (17 entries) and closed with readback",
+  "external_assets": 0,
+  "local_source_routes": {"count": 16, "http_head_all_200": true, "method": "Python HTTP HEAD after checking browser-resolved URLs"},
+  "fetch_probe": "Blocked by intentional connect-src none CSP. This is not a broken source route; all source HEAD checks passed separately.",
+  "screenshot": "BLOCKED: OpenCLI Page.captureScreenshot timed out after 60s in both background and foreground modes. No substitute browser or fabricated screenshot used.",
+  "visual_readability": "NOT_VERIFIED_BY_SCREENSHOT; DOM geometry and 22px body font checked, not a visual review",
+  "independent_code_review": "ACCEPTED_FOR_NEXT_STAGE for code/unit scope only; no blocking reproducibility/leakage/tracking findings. Official fit verified separately by parent.",
+  "production_readiness": "NOT_CLAIMED"
+}

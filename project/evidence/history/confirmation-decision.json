@@ -1,0 +1,137 @@
+{
+  "phase": "single_confirmation",
+  "recipe": "0.5*template + 0.5*llm",
+  "against_behavior": {
+    "base_logloss": 0.19710461042189698,
+    "candidate_logloss": 0.1509737977745541,
+    "delta_candidate_minus_base": -0.046130812647342874,
+    "group_bootstrap_95pct_interval": [
+      -0.06623743146180419,
+      -0.02788012905633046
+    ],
+    "participant_better": 307,
+    "participant_worse": 309,
+    "n_rows": 616,
+    "n_components": 302
+  },
+  "against_template": {
+    "base_logloss": 0.16329557818475118,
+    "candidate_logloss": 0.1509737977745541,
+    "delta_candidate_minus_base": -0.012321780410197065,
+    "group_bootstrap_95pct_interval": [
+      -0.02039207307560603,
+      -0.006646366638856782
+    ],
+    "participant_better": 354,
+    "participant_worse": 262,
+    "n_rows": 616,
+    "n_components": 302
+  },
+  "template_vs_behavior": {
+    "base_logloss": 0.19710461042189698,
+    "candidate_logloss": 0.16329557818475118,
+    "delta_candidate_minus_base": -0.033809032237145806,
+    "group_bootstrap_95pct_interval": [
+      -0.05192744545119331,
+      -0.01695042408202269
+    ],
+    "participant_better": 307,
+    "participant_worse": 309,
+    "n_rows": 616,
+    "n_components": 302
+  },
+  "raw_llm_logloss": 0.14196884359215173,
+  "verdict": "VALIDATED",
+  "admit_final_llm": true,
+  "receipts": {
+    "runs/llm-confirmation-v1/batch-00": {
+      "model_requested": "gpt-6.1-sol",
+      "seconds": 113.0969544579275,
+      "count": 40,
+      "event_item_types": [
+        "agent_message"
+      ],
+      "output_sha256": "c55e4cef6f707189cc0fd7693dbad856a481dd4bd96097af64f5fd47a84b56cb",
+      "input_sha256": "fa9fbadc07063ca5c1caecd3885f59cdcc83dbaefa24cddf8110ac869cfce14b",
+      "prompt_sha256": "9d402934648d4a2416a3df69b38bf36a645d33a5492c679e22e41210af608877"
+    },
+    "runs/llm-confirmation-v1/batch-01": {
+      "model_requested": "gpt-6.1-sol",
+      "seconds": 184.79004108300433,
+      "count": 40,
+      "event_item_types": [
+        "agent_message"
+      ],
+      "output_sha256": "c0aa5d80ce1a27a6a3c497b41301df849e924f2e1fb3e6cb7d37762169f32057",
+      "input_sha256": "abb5ca03b2db6230938be5de25d8fb213fbb0f88b040039674e97e7d99f15196",
+      "prompt_sha256": "842510d331e9de6690b0ffdb82ee8cb198c69ba225d1077440fbb21933726087"
+    },
+    "runs/llm-confirmation-v1/batch-02": {
+      "model_requested": "gpt-6.1-sol",
+      "seconds": 107.28381504118443,
+      "count": 40,
+      "event_item_types": [
+        "agent_message"
+      ],
+      "output_sha256": "faf60b937dfe0669f2c5b8ef8d50c04d60a52763a554ebb737402fa75d4659e7",
+      "input_sha256": "403db8bf90b0fed4325dc5a1cafa9d97fc5cdcf3e69d5224a3edc6b303b2c4e3",
+      "prompt_sha256": "d5c98ac8d20de7350ac59d035a4c18380092ef948994b728e7391421c4719bc9"
+    },
+    "runs/llm-confirmation-v1/batch-03": {
+      "model_requested": "gpt-6.1-sol",
+      "seconds": 95.73031933326274,
+      "count": 40,
+      "event_item_types": [
+        "agent_message"
+      ],
+      "output_sha256": "88bc099d836f050146cd8db349376d7629e4c283bbe483f8b8e4c4c1b081523f",
+      "input_sha256": "ad2fc65aa5f22aee6d61cebe1b01b60c3eadf9851e1f1dc30719b235b163f55d",
+      "prompt_sha256": "ed4d9e6d4e7a0e7e24891c0cf44e5cd5e88acb68252adfc7926944038e55327a"
+    },
+    "runs/llm-confirmation-v1/batch-04": {
+      "model_requested": "gpt-6.1-sol",
+      "seconds": 72.42747054202482,
+      "count": 40,
+      "event_item_types": [
+        "agent_message"
+      ],
+      "output_sha256": "f34294128b19dfe61ba056e26baf99f4a9f313b61d6d3b999408488043d42edc",
+      "input_sha256": "051dcad878dfad7c8de8e2193fbc588ca65ad0b6b19d5539351ebd51cf6e843f",
+      "prompt_sha256": "e89167d3898130dc91a77d8b684c8d81ba8220c499f451da523d58de360fd224"
+    },
+    "runs/llm-confirmation-v1/batch-05": {
+      "model_requested": "gpt-6.1-sol",
+      "seconds": 118.81194583326578,
+      "count": 40,
+      "event_item_types": [
+        "agent_message"
+      ],
+      "output_sha256": "7fdceafd2616633f8688a45237c2b073256332143d12eb24ce8da2d1fa2ef45f",
+      "input_sha256": "4bf8cfb3484d90a0ef12fb45a238337514d947c9913793507b29868154c63827",
+      "prompt_sha256": "8d86943d50a6b90ec43db66d60bdefbd3ef8a11261b9829eb241bc06733cd0bd"
+    },
+    "runs/llm-confirmation-v1/batch-06": {
+      "model_requested": "gpt-6.1-sol",
+      "seconds": 115.34356733271852,
+      "count": 40,
+      "event_item_types": [
+        "agent_message"
+      ],
+      "output_sha256": "d954604bec5b00bc46dcf2e12bf2fc0ed18846408436cc69202f51406f43890a",
+      "input_sha256": "5f20c20187d90f4323f1e5d085416d712ae6064bc69eccaf30d19b3987d47ed6",
+      "prompt_sha256": "72507c08c593c5870ac60c1b5e6d3f31b31dd6efb8afbe3f2f1d8695a3c60cc7"
+    },
+    "runs/llm-confirmation-v1/batch-07": {
+      "model_requested": "gpt-6.1-sol",
+      "seconds": 78.47915487503633,
+      "count": 28,
+      "event_item_types": [
+        "agent_message"
+      ],
+      "output_sha256": "d2fff2cfa81ff328c426597d512d4846ec1ba4a797e98f3159bc5a62ce1ff9ec",
+      "input_sha256": "517ba42ee3fc074bff2c8ead49cca92facf2ed1cc9a51dc97b5dddca6fb48ee6",
+      "prompt_sha256": "d5975d635a15d70e65cee2f8ca5ec189e51b275466c4215ce9365c59929ceba2"
+    }
+  },
+  "submitted": false
+}

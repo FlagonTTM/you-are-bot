@@ -1,0 +1,48 @@
+{
+  "all_exact": true,
+  "comparison": "numpy.array_equal, float64; no tolerance relaxation",
+  "models": [
+    {
+      "checkpoint": "models/fold-0.cbm",
+      "exact": true,
+      "max_absolute_difference": 0.0,
+      "rows": 488,
+      "scope": "fold-0"
+    },
+    {
+      "checkpoint": "models/fold-1.cbm",
+      "exact": true,
+      "max_absolute_difference": 0.0,
+      "rows": 492,
+      "scope": "fold-1"
+    },
+    {
+      "checkpoint": "models/fold-2.cbm",
+      "exact": true,
+      "max_absolute_difference": 0.0,
+      "rows": 478,
+      "scope": "fold-2"
+    },
+    {
+      "checkpoint": "models/fold-3.cbm",
+      "exact": true,
+      "max_absolute_difference": 0.0,
+      "rows": 480,
+      "scope": "fold-3"
+    },
+    {
+      "checkpoint": "models/fold-4.cbm",
+      "exact": true,
+      "max_absolute_difference": 0.0,
+      "rows": 478,
+      "scope": "fold-4"
+    },
+    {
+      "checkpoint": "models/full.cbm",
+      "exact": true,
+      "max_absolute_difference": 0.0,
+      "rows": 758,
+      "scope": "full-refit-test"
+    }
+  ]
+}

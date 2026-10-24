@@ -1,0 +1,43 @@
+{
+  "schema": "coursework.template.v1",
+  "model": "template",
+  "model_params": {
+    "iterations": 1000,
+    "depth": 5,
+    "learning_rate": 0.04,
+    "l2_leaf_reg": 5,
+    "loss_function": "Logloss",
+    "random_seed": 1729,
+    "thread_count": 4,
+    "verbose": false,
+    "allow_writing_files": false
+  },
+  "feature_counts": {
+    "numeric": 162,
+    "categorical": 14
+  },
+  "folds": 5,
+  "seed": 1729,
+  "selection": "Frozen recipe, no early stopping or quality-dependent selection",
+  "historical_oof_logloss": 0.16919850572003053,
+  "historical_report": {
+    "origin": "runs/template-v1/report.json",
+    "sha256": "3bc1d9dd13e77ded67e2ec89837b8e8fec537bb2832a82abd5612788824adf21"
+  },
+  "official_hashes": {
+    "sample_submission.csv": "bf0ecf417e9ed88001370c437949c7540c09449c0b3e5f9746627c67ec1b503f",
+    "test.json": "a330a9e00e724cb6fe3541d89b9646ab2aef83c025f0b0bcc24811ceddedf428",
+    "train.json": "ca3795aa47b8791174a9225a1fe3219684dc388c88922053afdab411bf44ea34",
+    "ytest.csv": "46463c8de28dbbeaa3b0e763c62c1a4a8b251e9df9c79c9e64a559224fe8e7aa",
+    "ytrain.csv": "7977ce4773cade43f27459711b2ca943addf284cd6c0ea9b830c71ebc7d5b233"
+  },
+  "membership_sha256": "e553e7bcdfa98b398b0a534a5d9fc095c5a19f60054f87c365cbe705d6b04dee",
+  "counts": {
+    "train_dialogs": 1516,
+    "test_dialogs": 379,
+    "train_rows": 3032,
+    "test_rows": 758,
+    "dev_rows": 2416,
+    "confirmation_rows": 616
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "all_unchanged": true,
+  "closure_note": "Only consumed runtime/config/dependencies. Presentation, docs, tools, evidence and outputs intentionally excluded.",
+  "input_after": {
+    "sample_submission.csv": "bf0ecf417e9ed88001370c437949c7540c09449c0b3e5f9746627c67ec1b503f",
+    "test.json": "a330a9e00e724cb6fe3541d89b9646ab2aef83c025f0b0bcc24811ceddedf428",
+    "train.json": "ca3795aa47b8791174a9225a1fe3219684dc388c88922053afdab411bf44ea34",
+    "ytest.csv": "46463c8de28dbbeaa3b0e763c62c1a4a8b251e9df9c79c9e64a559224fe8e7aa",
+    "ytrain.csv": "7977ce4773cade43f27459711b2ca943addf284cd6c0ea9b830c71ebc7d5b233"
+  },
+  "input_before": {
+    "sample_submission.csv": "bf0ecf417e9ed88001370c437949c7540c09449c0b3e5f9746627c67ec1b503f",
+    "test.json": "a330a9e00e724cb6fe3541d89b9646ab2aef83c025f0b0bcc24811ceddedf428",
+    "train.json": "ca3795aa47b8791174a9225a1fe3219684dc388c88922053afdab411bf44ea34",
+    "ytest.csv": "46463c8de28dbbeaa3b0e763c62c1a4a8b251e9df9c79c9e64a559224fe8e7aa",
+    "ytrain.csv": "7977ce4773cade43f27459711b2ca943addf284cd6c0ea9b830c71ebc7d5b233"
+  },
+  "source_after": {
+    "configs/membership-v2.json": "e553e7bcdfa98b398b0a534a5d9fc095c5a19f60054f87c365cbe705d6b04dee",
+    "configs/template.json": "5a3b936da8215aaad4bf41fb6bd6924394d3ae6b8cd6b6eeda041e7f07b6c370",
+    "requirements.in": "9cf965e31f4a476ca2f245b7eff8ea3dbf8864e4d1e6881574b4783823a42062",
+    "requirements.lock": "8a4bc72436cd2aaf8d3a9dbdbeb568b3bba4d52dfb7cc3afba730fa7c80e1fa5",
+    "run.py": "72b73f31ab423e4e5dec87befac47473bcf0fbcde5a3d71b438dba01a1e80029",
+    "run.sh": "5cfa403618084b64d75f9966c5a0df5a3f8bfd7e7f20fe51da30188bd7ccfbe6",
+    "src/botbench.py": "eefbceba31ae9926b84baebecf23b6b2d797415e555c116f9e043461bcf53c3c",
+    "src/dependencies.py": "03ea3a0295cafcf7515d7aa69eb80ac2dc3c1ac990d09e6eb04289c1a30ee16a",
+    "src/eda.py": "da54c64797e8779fa22e197eab145fcf79594ce16eb15023393f8da13da42503",
+    "src/experiment.py": "950c028539c42550643c3beb3b8b391361a00658680fcac065a2a5160dfe159f",
+    "src/guards.py": "252234349eb9bfa506c6c85f3a3d7a2130cf8bab5b74e6dda0898814845455ec",
+    "src/origins.json": "cae898945b8ceecb52f972f2b19aa9208d7a0bfa823091e406972a218c8c2606",
+    "src/pipeline.py": "5039f21d469c801d4a9f66f4a64fd78cbd8d2454e7ae51be910ddeb788ad7183",
+    "src/tracking.py": "4d48629d0911cdb83c542deb8273e69e8954c11a7d9e1e0408c868c6895b3e85"
+  },
+  "source_before": {
+    "configs/membership-v2.json": "e553e7bcdfa98b398b0a534a5d9fc095c5a19f60054f87c365cbe705d6b04dee",
+    "configs/template.json": "5a3b936da8215aaad4bf41fb6bd6924394d3ae6b8cd6b6eeda041e7f07b6c370",
+    "requirements.in": "9cf965e31f4a476ca2f245b7eff8ea3dbf8864e4d1e6881574b4783823a42062",
+    "requirements.lock": "8a4bc72436cd2aaf8d3a9dbdbeb568b3bba4d52dfb7cc3afba730fa7c80e1fa5",
+    "run.py": "72b73f31ab423e4e5dec87befac47473bcf0fbcde5a3d71b438dba01a1e80029",
+    "run.sh": "5cfa403618084b64d75f9966c5a0df5a3f8bfd7e7f20fe51da30188bd7ccfbe6",
+    "src/botbench.py": "eefbceba31ae9926b84baebecf23b6b2d797415e555c116f9e043461bcf53c3c",
+    "src/dependencies.py": "03ea3a0295cafcf7515d7aa69eb80ac2dc3c1ac990d09e6eb04289c1a30ee16a",
+    "src/eda.py": "da54c64797e8779fa22e197eab145fcf79594ce16eb15023393f8da13da42503",
+    "src/experiment.py": "950c028539c42550643c3beb3b8b391361a00658680fcac065a2a5160dfe159f",
+    "src/guards.py": "252234349eb9bfa506c6c85f3a3d7a2130cf8bab5b74e6dda0898814845455ec",
+    "src/origins.json": "cae898945b8ceecb52f972f2b19aa9208d7a0bfa823091e406972a218c8c2606",
+    "src/pipeline.py": "5039f21d469c801d4a9f66f4a64fd78cbd8d2454e7ae51be910ddeb788ad7183",
+    "src/tracking.py": "4d48629d0911cdb83c542deb8273e69e8954c11a7d9e1e0408c868c6895b3e85"
+  }
+}

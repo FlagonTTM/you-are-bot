@@ -1,0 +1,8 @@
+# Exact versions already present in the inspected Python 3.13 environment.
+# Nothing was installed automatically.
+numpy==2.2.6
+scipy==1.14.1
+scikit-learn==1.5.2
+catboost==1.2.8
+pytest==8.3.5
+joblib==1.5.1

@@ -1,0 +1,104 @@
+{
+  "schema": "coursework.reproduction-proof.v1",
+  "status": "VERIFIED",
+  "verified_at_utc": "2026-10-24T14:57:08.563318+00:00",
+  "run_id": "native-reproduction-01",
+  "command": "TMPDIR=/Users/Ivan/.hermes/profiles/hackatons/cache/scratch ./project/run.sh --data-dir /Users/Ivan/PycharmProjects/you-are-bot/data --output-dir /Users/Ivan/.hermes/profiles/hackatons/cache/scratch/coursework-native-runs --run-id native-reproduction-01",
+  "execution_scope": "standalone scratch copy, no parent project-code imports; existing locked dependencies",
+  "oof_logloss": 0.16919850572003053,
+  "oof_auc": 0.98174990051731,
+  "oof_rows": 2416,
+  "test_rows": 758,
+  "seconds": 28.890630250331014,
+  "tracking": {
+    "backend": "SQLite+JSON",
+    "run_status": "FINISHED",
+    "database": "evidence/reproduction/tracking.sqlite3",
+    "logged_parameters": 15,
+    "parameter_record_semantics": "15 named parameter groups, including six full effective model parameter dictionaries; not the number of scalar hyperparameters",
+    "logged_metrics": 12,
+    "logged_artifacts": 30
+  },
+  "checks": {
+    "independent_oof_metric_readback": true,
+    "sql_json_projection_equal": true,
+    "all_original_artifact_hashes_and_sizes_match": true,
+    "all_consumed_source_bytes_match_repository_and_snapshot": true,
+    "all_input_hashes_unchanged": true,
+    "five_component_disjoint_folds": true,
+    "confirmation_excluded_from_all_cv_fits": true,
+    "six_effective_model_parameter_records": true,
+    "six_checkpoints_replay_exact": true,
+    "csv_exact_sample_ids_order_schema": true,
+    "csv_probabilities_finite_in_range": true,
+    "source_and_input_closures_unchanged": true
+  },
+  "source_manifest": {
+    "configs/membership-v2.json": "e553e7bcdfa98b398b0a534a5d9fc095c5a19f60054f87c365cbe705d6b04dee",
+    "configs/template.json": "5a3b936da8215aaad4bf41fb6bd6924394d3ae6b8cd6b6eeda041e7f07b6c370",
+    "requirements.in": "9cf965e31f4a476ca2f245b7eff8ea3dbf8864e4d1e6881574b4783823a42062",
+    "requirements.lock": "8a4bc72436cd2aaf8d3a9dbdbeb568b3bba4d52dfb7cc3afba730fa7c80e1fa5",
+    "run.py": "72b73f31ab423e4e5dec87befac47473bcf0fbcde5a3d71b438dba01a1e80029",
+    "run.sh": "5cfa403618084b64d75f9966c5a0df5a3f8bfd7e7f20fe51da30188bd7ccfbe6",
+    "src/botbench.py": "eefbceba31ae9926b84baebecf23b6b2d797415e555c116f9e043461bcf53c3c",
+    "src/dependencies.py": "03ea3a0295cafcf7515d7aa69eb80ac2dc3c1ac990d09e6eb04289c1a30ee16a",
+    "src/eda.py": "da54c64797e8779fa22e197eab145fcf79594ce16eb15023393f8da13da42503",
+    "src/experiment.py": "950c028539c42550643c3beb3b8b391361a00658680fcac065a2a5160dfe159f",
+    "src/guards.py": "252234349eb9bfa506c6c85f3a3d7a2130cf8bab5b74e6dda0898814845455ec",
+    "src/origins.json": "cae898945b8ceecb52f972f2b19aa9208d7a0bfa823091e406972a218c8c2606",
+    "src/pipeline.py": "5039f21d469c801d4a9f66f4a64fd78cbd8d2454e7ae51be910ddeb788ad7183",
+    "src/tracking.py": "4d48629d0911cdb83c542deb8273e69e8954c11a7d9e1e0408c868c6895b3e85"
+  },
+  "export": {
+    "kind": "curated subset, not the complete run directory",
+    "files": {
+      "report.json": {
+        "sha256": "b855e6b4ca8daae7d69e37a3dacdf6287ff69ab46672363dec0045dbf75d71e0",
+        "bytes": 2828
+      },
+      "tracking.sqlite3": {
+        "sha256": "026ad0dcfca41f0bebd7a33fd3fc0d947703e5101c70a17727aa7d01c2fcab3d",
+        "bytes": 73728
+      },
+      "tracking.json": {
+        "sha256": "cdf3ee1cc5469dbe88091081df83f013ba942009e4b4e7b71c6a6097ee254a44",
+        "bytes": 35277
+      },
+      "eda.json": {
+        "sha256": "3a5b3acfeb7206749401d1e4f454529102728e10313df094f4da5a4dd5136c69",
+        "bytes": 8310
+      },
+      "checkpoint-replay.json": {
+        "sha256": "46dabe02ea7a423c70d19f5df7dc12129433d6f98e0aa7421408f0aac936487c",
+        "bytes": 1056
+      },
+      "immutability.json": {
+        "sha256": "4b9bfc186a8640c6bc2a4777557363b854e7ed9e11f2d3edb832f0fa1729cc55",
+        "bytes": 3688
+      },
+      "inputs-manifest.json": {
+        "sha256": "c951facc4aa0d12bab93778738ce4040cb6d47c2e8d386967f5558f4c8ed1c63",
+        "bytes": 493
+      },
+      "oof.csv": {
+        "sha256": "50421430a0ea11131199f873776511b00deefdde7af10200ae6a21ba87a363b1",
+        "bytes": 149902
+      },
+      "native-test.csv": {
+        "sha256": "42194a3f976369c372b6edae0d20f58e350836ed3186dd550ab30e37cd6b2c97",
+        "bytes": 45558
+      },
+      "fold-receipts.json": {
+        "sha256": "e7ec08c1f6c2c96c73a1761430040a4eecbfd7f7495014e31cddcc7685c84057",
+        "bytes": 856565
+      },
+      "run.log.jsonl": {
+        "sha256": "98046f8722d51304bbbe7771d2299a854fe97cf2a556b50562643cccc151cf0c",
+        "bytes": 1298
+      }
+    },
+    "omitted": "models/*.cbm, snapshot/ and original index.html are not committed; rerun the pipeline to generate the complete directory"
+  },
+  "historical_public_result_is_not_native_csv_score": true,
+  "submitted": false
+}

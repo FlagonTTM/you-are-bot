@@ -1,0 +1,17 @@
+{
+  "schema": "coursework.origins.v1",
+  "files": {
+    "botbench.py": {
+      "origin": "botbench.py",
+      "sha256": "eefbceba31ae9926b84baebecf23b6b2d797415e555c116f9e043461bcf53c3c",
+      "bytes": 11721,
+      "adaptation": "Exact full copy; only pure loading, grouping, feature, fit/predict and CSV APIs used. Historical run()/provenance() are not invoked."
+    },
+    "experiment.py": {
+      "origin": "experiment.py",
+      "sha256": "950c028539c42550643c3beb3b8b391361a00658680fcac065a2a5160dfe159f",
+      "bytes": 11127,
+      "adaptation": "Exact full copy; only pure loading, grouping, feature, fit/predict and CSV APIs used. Historical run()/provenance() are not invoked."
+    }
+  }
+}

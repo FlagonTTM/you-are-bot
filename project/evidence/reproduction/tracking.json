@@ -1,0 +1,1096 @@
+{
+  "artifacts": {
+    "checkpoint-replay.json": {
+      "bytes": 1056,
+      "sha256": "46dabe02ea7a423c70d19f5df7dc12129433d6f98e0aa7421408f0aac936487c"
+    },
+    "eda.json": {
+      "bytes": 8310,
+      "sha256": "3a5b3acfeb7206749401d1e4f454529102728e10313df094f4da5a4dd5136c69"
+    },
+    "fold-receipts.json": {
+      "bytes": 856565,
+      "sha256": "e7ec08c1f6c2c96c73a1761430040a4eecbfd7f7495014e31cddcc7685c84057"
+    },
+    "immutability.json": {
+      "bytes": 3688,
+      "sha256": "4b9bfc186a8640c6bc2a4777557363b854e7ed9e11f2d3edb832f0fa1729cc55"
+    },
+    "index.html": {
+      "bytes": 44534,
+      "sha256": "e9a0f74d2f4d22e31062e52015932e1c426a255be93e4cebe0e542681a2dbc5d"
+    },
+    "inputs-manifest.json": {
+      "bytes": 493,
+      "sha256": "c951facc4aa0d12bab93778738ce4040cb6d47c2e8d386967f5558f4c8ed1c63"
+    },
+    "models/fold-0.cbm": {
+      "bytes": 1451256,
+      "sha256": "fcc496f66c547a2fe8f343940be84046ae3c029382fe1e2eac97bd9ab0a061da"
+    },
+    "models/fold-1.cbm": {
+      "bytes": 1063564,
+      "sha256": "ea42e6941cd34aec5236acef440aedb472c99ee8a19738b7f0d09460cec6f0fe"
+    },
+    "models/fold-2.cbm": {
+      "bytes": 1164268,
+      "sha256": "19a0be073a096b9fcccc196a81e38cac9b27489afabf77568f096df74e4b8169"
+    },
+    "models/fold-3.cbm": {
+      "bytes": 1342724,
+      "sha256": "e90a9ef9242bfe0340b8562a5d3e4e24f3ceacc6a06fbb7ef9844e3915417f66"
+    },
+    "models/fold-4.cbm": {
+      "bytes": 1187308,
+      "sha256": "169535780ddc307d53599903d38d3fe0a5f6d7217f4f971c1b11f864c79ecc17"
+    },
+    "models/full.cbm": {
+      "bytes": 2138808,
+      "sha256": "852305352ea50bc8535fefb6d38cbc18fc0b75c792aa38d9b805e841ba070ebb"
+    },
+    "native-test.csv": {
+      "bytes": 45558,
+      "sha256": "42194a3f976369c372b6edae0d20f58e350836ed3186dd550ab30e37cd6b2c97"
+    },
+    "oof.csv": {
+      "bytes": 149902,
+      "sha256": "50421430a0ea11131199f873776511b00deefdde7af10200ae6a21ba87a363b1"
+    },
+    "report.json": {
+      "bytes": 2828,
+      "sha256": "b855e6b4ca8daae7d69e37a3dacdf6287ff69ab46672363dec0045dbf75d71e0"
+    },
+    "run.log.jsonl": {
+      "bytes": 1298,
+      "sha256": "98046f8722d51304bbbe7771d2299a854fe97cf2a556b50562643cccc151cf0c"
+    },
+    "snapshot/configs/membership-v2.json": {
+      "bytes": 561538,
+      "sha256": "e553e7bcdfa98b398b0a534a5d9fc095c5a19f60054f87c365cbe705d6b04dee"
+    },
+    "snapshot/configs/template.json": {
+      "bytes": 1425,
+      "sha256": "5a3b936da8215aaad4bf41fb6bd6924394d3ae6b8cd6b6eeda041e7f07b6c370"
+    },
+    "snapshot/requirements.in": {
+      "bytes": 180,
+      "sha256": "9cf965e31f4a476ca2f245b7eff8ea3dbf8864e4d1e6881574b4783823a42062"
+    },
+    "snapshot/requirements.lock": {
+      "bytes": 706,
+      "sha256": "8a4bc72436cd2aaf8d3a9dbdbeb568b3bba4d52dfb7cc3afba730fa7c80e1fa5"
+    },
+    "snapshot/run.py": {
+      "bytes": 1503,
+      "sha256": "72b73f31ab423e4e5dec87befac47473bcf0fbcde5a3d71b438dba01a1e80029"
+    },
+    "snapshot/run.sh": {
+      "bytes": 798,
+      "sha256": "5cfa403618084b64d75f9966c5a0df5a3f8bfd7e7f20fe51da30188bd7ccfbe6"
+    },
+    "snapshot/src/botbench.py": {
+      "bytes": 11721,
+      "sha256": "eefbceba31ae9926b84baebecf23b6b2d797415e555c116f9e043461bcf53c3c"
+    },
+    "snapshot/src/dependencies.py": {
+      "bytes": 3696,
+      "sha256": "03ea3a0295cafcf7515d7aa69eb80ac2dc3c1ac990d09e6eb04289c1a30ee16a"
+    },
+    "snapshot/src/eda.py": {
+      "bytes": 6302,
+      "sha256": "da54c64797e8779fa22e197eab145fcf79594ce16eb15023393f8da13da42503"
+    },
+    "snapshot/src/experiment.py": {
+      "bytes": 11127,
+      "sha256": "950c028539c42550643c3beb3b8b391361a00658680fcac065a2a5160dfe159f"
+    },
+    "snapshot/src/guards.py": {
+      "bytes": 7046,
+      "sha256": "252234349eb9bfa506c6c85f3a3d7a2130cf8bab5b74e6dda0898814845455ec"
+    },
+    "snapshot/src/origins.json": {
+      "bytes": 701,
+      "sha256": "cae898945b8ceecb52f972f2b19aa9208d7a0bfa823091e406972a218c8c2606"
+    },
+    "snapshot/src/pipeline.py": {
+      "bytes": 15807,
+      "sha256": "5039f21d469c801d4a9f66f4a64fd78cbd8d2454e7ae51be910ddeb788ad7183"
+    },
+    "snapshot/src/tracking.py": {
+      "bytes": 9234,
+      "sha256": "4d48629d0911cdb83c542deb8273e69e8954c11a7d9e1e0408c868c6895b3e85"
+    }
+  },
+  "backend": "stdlib SQLite + JSON (not MLflow)",
+  "control_files_note": "SQLite and tracking.json are receipt envelopes; self-referential hashes excluded.",
+  "ended_utc": "2026-10-24T14:53:46.686853+00:00",
+  "error": null,
+  "metrics": {
+    "fold-0/auc": 0.9826018808777429,
+    "fold-0/logloss": 0.17137512774894437,
+    "fold-1/auc": 0.974661581804439,
+    "fold-1/logloss": 0.20525968362873118,
+    "fold-2/auc": 0.9749254287844892,
+    "fold-2/logloss": 0.20047448224229258,
+    "fold-3/auc": 0.9856829751131223,
+    "fold-3/logloss": 0.1515717313885535,
+    "fold-4/auc": 0.9917137067592994,
+    "fold-4/logloss": 0.11628353463274406,
+    "oof/auc": 0.98174990051731,
+    "oof/logloss": 0.16919850572003053
+  },
+  "params": {
+    "configuration": {
+      "counts": {
+        "confirmation_rows": 616,
+        "dev_rows": 2416,
+        "test_dialogs": 379,
+        "test_rows": 758,
+        "train_dialogs": 1516,
+        "train_rows": 3032
+      },
+      "feature_counts": {
+        "categorical": 14,
+        "numeric": 162
+      },
+      "folds": 5,
+      "historical_oof_logloss": 0.16919850572003053,
+      "historical_report": {
+        "origin": "runs/template-v1/report.json",
+        "sha256": "3bc1d9dd13e77ded67e2ec89837b8e8fec537bb2832a82abd5612788824adf21"
+      },
+      "membership_sha256": "e553e7bcdfa98b398b0a534a5d9fc095c5a19f60054f87c365cbe705d6b04dee",
+      "model": "template",
+      "model_params": {
+        "allow_writing_files": false,
+        "depth": 5,
+        "iterations": 1000,
+        "l2_leaf_reg": 5,
+        "learning_rate": 0.04,
+        "loss_function": "Logloss",
+        "random_seed": 1729,
+        "thread_count": 4,
+        "verbose": false
+      },
+      "official_hashes": {
+        "sample_submission.csv": "bf0ecf417e9ed88001370c437949c7540c09449c0b3e5f9746627c67ec1b503f",
+        "test.json": "a330a9e00e724cb6fe3541d89b9646ab2aef83c025f0b0bcc24811ceddedf428",
+        "train.json": "ca3795aa47b8791174a9225a1fe3219684dc388c88922053afdab411bf44ea34",
+        "ytest.csv": "46463c8de28dbbeaa3b0e763c62c1a4a8b251e9df9c79c9e64a559224fe8e7aa",
+        "ytrain.csv": "7977ce4773cade43f27459711b2ca943addf284cd6c0ea9b830c71ebc7d5b233"
+      },
+      "schema": "coursework.template.v1",
+      "seed": 1729,
+      "selection": "Frozen recipe, no early stopping or quality-dependent selection"
+    },
+    "data_counts": {
+      "confirmation_rows": 616,
+      "dev_rows": 2416,
+      "test_dialogs": 379,
+      "test_rows": 758,
+      "train_dialogs": 1516,
+      "train_rows": 3032
+    },
+    "environment": {
+      "dependency_edges": {
+        "catboost": [
+          {
+            "name": "graphviz",
+            "requirement": "graphviz"
+          },
+          {
+            "name": "matplotlib",
+            "requirement": "matplotlib"
+          },
+          {
+            "name": "numpy",
+            "requirement": "numpy<3.0,>=1.16.0"
+          },
+          {
+            "name": "pandas",
+            "requirement": "pandas>=0.24"
+          },
+          {
+            "name": "scipy",
+            "requirement": "scipy"
+          },
+          {
+            "name": "plotly",
+            "requirement": "plotly"
+          },
+          {
+            "name": "six",
+            "requirement": "six"
+          }
+        ],
+        "contourpy": [
+          {
+            "name": "numpy",
+            "requirement": "numpy>=1.23"
+          }
+        ],
+        "cycler": [],
+        "fonttools": [],
+        "graphviz": [],
+        "iniconfig": [],
+        "joblib": [],
+        "kiwisolver": [],
+        "matplotlib": [
+          {
+            "name": "contourpy",
+            "requirement": "contourpy>=1.0.1"
+          },
+          {
+            "name": "cycler",
+            "requirement": "cycler>=0.10"
+          },
+          {
+            "name": "fonttools",
+            "requirement": "fonttools>=4.22.0"
+          },
+          {
+            "name": "kiwisolver",
+            "requirement": "kiwisolver>=1.3.1"
+          },
+          {
+            "name": "numpy",
+            "requirement": "numpy>=1.23"
+          },
+          {
+            "name": "packaging",
+            "requirement": "packaging>=20.0"
+          },
+          {
+            "name": "pillow",
+            "requirement": "pillow>=8"
+          },
+          {
+            "name": "pyparsing",
+            "requirement": "pyparsing>=2.3.1"
+          },
+          {
+            "name": "python-dateutil",
+            "requirement": "python-dateutil>=2.7"
+          }
+        ],
+        "narwhals": [],
+        "numpy": [],
+        "packaging": [],
+        "pandas": [
+          {
+            "name": "numpy",
+            "requirement": "numpy>=1.26.0; python_version >= \"3.12\""
+          },
+          {
+            "name": "python-dateutil",
+            "requirement": "python-dateutil>=2.8.2"
+          },
+          {
+            "name": "pytz",
+            "requirement": "pytz>=2020.1"
+          },
+          {
+            "name": "tzdata",
+            "requirement": "tzdata>=2022.7"
+          }
+        ],
+        "pillow": [],
+        "plotly": [
+          {
+            "name": "narwhals",
+            "requirement": "narwhals>=1.15.1"
+          },
+          {
+            "name": "packaging",
+            "requirement": "packaging"
+          }
+        ],
+        "pluggy": [],
+        "pyparsing": [],
+        "pytest": [
+          {
+            "name": "iniconfig",
+            "requirement": "iniconfig"
+          },
+          {
+            "name": "packaging",
+            "requirement": "packaging"
+          },
+          {
+            "name": "pluggy",
+            "requirement": "pluggy<2,>=1.5"
+          }
+        ],
+        "python-dateutil": [
+          {
+            "name": "six",
+            "requirement": "six>=1.5"
+          }
+        ],
+        "pytz": [],
+        "scikit-learn": [
+          {
+            "name": "numpy",
+            "requirement": "numpy>=1.19.5"
+          },
+          {
+            "name": "scipy",
+            "requirement": "scipy>=1.6.0"
+          },
+          {
+            "name": "joblib",
+            "requirement": "joblib>=1.2.0"
+          },
+          {
+            "name": "threadpoolctl",
+            "requirement": "threadpoolctl>=3.1.0"
+          }
+        ],
+        "scipy": [
+          {
+            "name": "numpy",
+            "requirement": "numpy<2.3,>=1.23.5"
+          }
+        ],
+        "six": [],
+        "threadpoolctl": [],
+        "tzdata": []
+      },
+      "implementation": "CPython",
+      "lock_scope": "Resolved against installed metadata for CPython 3.13.2 / macOS arm64; not a universal wheel or cross-platform lock.",
+      "machine": "arm64",
+      "packages": {
+        "catboost": "1.2.8",
+        "contourpy": "1.3.2",
+        "cycler": "0.12.1",
+        "fonttools": "4.58.4",
+        "graphviz": "0.21",
+        "iniconfig": "2.1.0",
+        "joblib": "1.5.1",
+        "kiwisolver": "1.4.8",
+        "matplotlib": "3.10.3",
+        "narwhals": "2.15.0",
+        "numpy": "2.2.6",
+        "packaging": "24.2",
+        "pandas": "2.2.3",
+        "pillow": "11.2.1",
+        "plotly": "6.5.2",
+        "pluggy": "1.5.0",
+        "pyparsing": "3.2.3",
+        "pytest": "8.3.5",
+        "python-dateutil": "2.9.0.post0",
+        "pytz": "2025.2",
+        "scikit-learn": "1.5.2",
+        "scipy": "1.14.1",
+        "six": "1.17.0",
+        "threadpoolctl": "3.6.0",
+        "tzdata": "2025.2"
+      },
+      "python": "3.13.2",
+      "release": "24.6.0",
+      "sqlite_version": "3.45.3",
+      "system": "Darwin",
+      "threads": {
+        "MKL_NUM_THREADS": "4",
+        "NUMEXPR_NUM_THREADS": "4",
+        "OMP_NUM_THREADS": "4",
+        "OPENBLAS_NUM_THREADS": "4",
+        "VECLIB_MAXIMUM_THREADS": "4"
+      },
+      "tmpdir_policy": "Explicit writable scratch; absolute location intentionally not exported"
+    },
+    "features": {
+      "cat_features": [
+        162,
+        163,
+        164,
+        165,
+        166,
+        167,
+        168,
+        169,
+        170,
+        171,
+        172,
+        173,
+        174,
+        175
+      ],
+      "categorical": 14,
+      "identity_columns_as_features": false,
+      "numeric": 162,
+      "targets_as_features": false,
+      "total": 176,
+      "uuid_values": "masked by clean_text for categorical features"
+    },
+    "git_context": {
+      "available": false
+    },
+    "input_sha256": {
+      "sample_submission.csv": "bf0ecf417e9ed88001370c437949c7540c09449c0b3e5f9746627c67ec1b503f",
+      "test.json": "a330a9e00e724cb6fe3541d89b9646ab2aef83c025f0b0bcc24811ceddedf428",
+      "train.json": "ca3795aa47b8791174a9225a1fe3219684dc388c88922053afdab411bf44ea34",
+      "ytest.csv": "46463c8de28dbbeaa3b0e763c62c1a4a8b251e9df9c79c9e64a559224fe8e7aa",
+      "ytrain.csv": "7977ce4773cade43f27459711b2ca943addf284cd6c0ea9b830c71ebc7d5b233"
+    },
+    "model/fold-0": {
+      "classes": [
+        0,
+        1
+      ],
+      "get_all_params": {
+        "auto_class_weights": "None",
+        "bayesian_matrix_reg": 0.10000000149011612,
+        "best_model_min_trees": 1,
+        "boost_from_average": false,
+        "boosting_type": "Plain",
+        "bootstrap_type": "MVS",
+        "border_count": 254,
+        "class_names": [
+          0,
+          1
+        ],
+        "classes_count": 0,
+        "combinations_ctr": [
+          "Borders:CtrBorderCount=15:CtrBorderType=Uniform:TargetBorderCount=1:TargetBorderType=MinEntropy:Prior=0/1:Prior=0.5/1:Prior=1/1",
+          "Counter:CtrBorderCount=15:CtrBorderType=Uniform:Prior=0/1"
+        ],
+        "counter_calc_method": "SkipTest",
+        "ctr_leaf_count_limit": 18446744073709551615,
+        "ctr_target_border_count": 1,
+        "depth": 5,
+        "eval_fraction": 0,
+        "eval_metric": "Logloss",
+        "feature_border_type": "GreedyLogSum",
+        "fold_permutation_block": 0,
+        "force_unit_auto_pair_weights": false,
+        "grow_policy": "SymmetricTree",
+        "has_time": false,
+        "iterations": 1000,
+        "l2_leaf_reg": 5,
+        "leaf_estimation_backtracking": "AnyImprovement",
+        "leaf_estimation_iterations": 10,
+        "leaf_estimation_method": "Newton",
+        "learning_rate": 0.03999999910593033,
+        "loss_function": "Logloss",
+        "max_ctr_complexity": 4,
+        "max_leaves": 32,
+        "min_data_in_leaf": 1,
+        "model_shrink_mode": "Constant",
+        "model_shrink_rate": 0,
+        "model_size_reg": 0.5,
+        "nan_mode": "Min",
+        "one_hot_max_size": 2,
+        "penalties_coefficient": 1,
+        "permutation_count": 4,
+        "pool_metainfo_options": {
+          "tags": {}
+        },
+        "posterior_sampling": false,
+        "random_score_type": "NormalWithModelSizeDecrease",
+        "random_seed": 1729,
+        "random_strength": 1,
+        "rsm": 1,
+        "sampling_frequency": "PerTree",
+        "score_function": "Cosine",
+        "simple_ctr": [
+          "Borders:CtrBorderCount=15:CtrBorderType=Uniform:TargetBorderCount=1:TargetBorderType=MinEntropy:Prior=0/1:Prior=0.5/1:Prior=1/1",
+          "Counter:CtrBorderCount=15:CtrBorderType=Uniform:Prior=0/1"
+        ],
+        "sparse_features_conflict_fraction": 0,
+        "store_all_simple_ctr": false,
+        "subsample": 0.800000011920929,
+        "task_type": "CPU",
+        "use_best_model": false
+      },
+      "get_params": {
+        "allow_writing_files": false,
+        "cat_features": [
+          162,
+          163,
+          164,
+          165,
+          166,
+          167,
+          168,
+          169,
+          170,
+          171,
+          172,
+          173,
+          174,
+          175
+        ],
+        "depth": 5,
+        "iterations": 1000,
+        "l2_leaf_reg": 5,
+        "learning_rate": 0.04,
+        "loss_function": "Logloss",
+        "random_seed": 1729,
+        "thread_count": 4,
+        "verbose": false
+      },
+      "note": "get_params includes explicit constructor/thread/categorical settings; get_all_params includes fitted effective defaults.",
+      "tree_count": 1000
+    },
+    "model/fold-1": {
+      "classes": [
+        0,
+        1
+      ],
+      "get_all_params": {
+        "auto_class_weights": "None",
+        "bayesian_matrix_reg": 0.10000000149011612,
+        "best_model_min_trees": 1,
+        "boost_from_average": false,
+        "boosting_type": "Plain",
+        "bootstrap_type": "MVS",
+        "border_count": 254,
+        "class_names": [
+          0,
+          1
+        ],
+        "classes_count": 0,
+        "combinations_ctr": [
+          "Borders:CtrBorderCount=15:CtrBorderType=Uniform:TargetBorderCount=1:TargetBorderType=MinEntropy:Prior=0/1:Prior=0.5/1:Prior=1/1",
+          "Counter:CtrBorderCount=15:CtrBorderType=Uniform:Prior=0/1"
+        ],
+        "counter_calc_method": "SkipTest",
+        "ctr_leaf_count_limit": 18446744073709551615,
+        "ctr_target_border_count": 1,
+        "depth": 5,
+        "eval_fraction": 0,
+        "eval_metric": "Logloss",
+        "feature_border_type": "GreedyLogSum",
+        "fold_permutation_block": 0,
+        "force_unit_auto_pair_weights": false,
+        "grow_policy": "SymmetricTree",
+        "has_time": false,
+        "iterations": 1000,
+        "l2_leaf_reg": 5,
+        "leaf_estimation_backtracking": "AnyImprovement",
+        "leaf_estimation_iterations": 10,
+        "leaf_estimation_method": "Newton",
+        "learning_rate": 0.03999999910593033,
+        "loss_function": "Logloss",
+        "max_ctr_complexity": 4,
+        "max_leaves": 32,
+        "min_data_in_leaf": 1,
+        "model_shrink_mode": "Constant",
+        "model_shrink_rate": 0,
+        "model_size_reg": 0.5,
+        "nan_mode": "Min",
+        "one_hot_max_size": 2,
+        "penalties_coefficient": 1,
+        "permutation_count": 4,
+        "pool_metainfo_options": {
+          "tags": {}
+        },
+        "posterior_sampling": false,
+        "random_score_type": "NormalWithModelSizeDecrease",
+        "random_seed": 1729,
+        "random_strength": 1,
+        "rsm": 1,
+        "sampling_frequency": "PerTree",
+        "score_function": "Cosine",
+        "simple_ctr": [
+          "Borders:CtrBorderCount=15:CtrBorderType=Uniform:TargetBorderCount=1:TargetBorderType=MinEntropy:Prior=0/1:Prior=0.5/1:Prior=1/1",
+          "Counter:CtrBorderCount=15:CtrBorderType=Uniform:Prior=0/1"
+        ],
+        "sparse_features_conflict_fraction": 0,
+        "store_all_simple_ctr": false,
+        "subsample": 0.800000011920929,
+        "task_type": "CPU",
+        "use_best_model": false
+      },
+      "get_params": {
+        "allow_writing_files": false,
+        "cat_features": [
+          162,
+          163,
+          164,
+          165,
+          166,
+          167,
+          168,
+          169,
+          170,
+          171,
+          172,
+          173,
+          174,
+          175
+        ],
+        "depth": 5,
+        "iterations": 1000,
+        "l2_leaf_reg": 5,
+        "learning_rate": 0.04,
+        "loss_function": "Logloss",
+        "random_seed": 1729,
+        "thread_count": 4,
+        "verbose": false
+      },
+      "note": "get_params includes explicit constructor/thread/categorical settings; get_all_params includes fitted effective defaults.",
+      "tree_count": 1000
+    },
+    "model/fold-2": {
+      "classes": [
+        0,
+        1
+      ],
+      "get_all_params": {
+        "auto_class_weights": "None",
+        "bayesian_matrix_reg": 0.10000000149011612,
+        "best_model_min_trees": 1,
+        "boost_from_average": false,
+        "boosting_type": "Plain",
+        "bootstrap_type": "MVS",
+        "border_count": 254,
+        "class_names": [
+          0,
+          1
+        ],
+        "classes_count": 0,
+        "combinations_ctr": [
+          "Borders:CtrBorderCount=15:CtrBorderType=Uniform:TargetBorderCount=1:TargetBorderType=MinEntropy:Prior=0/1:Prior=0.5/1:Prior=1/1",
+          "Counter:CtrBorderCount=15:CtrBorderType=Uniform:Prior=0/1"
+        ],
+        "counter_calc_method": "SkipTest",
+        "ctr_leaf_count_limit": 18446744073709551615,
+        "ctr_target_border_count": 1,
+        "depth": 5,
+        "eval_fraction": 0,
+        "eval_metric": "Logloss",
+        "feature_border_type": "GreedyLogSum",
+        "fold_permutation_block": 0,
+        "force_unit_auto_pair_weights": false,
+        "grow_policy": "SymmetricTree",
+        "has_time": false,
+        "iterations": 1000,
+        "l2_leaf_reg": 5,
+        "leaf_estimation_backtracking": "AnyImprovement",
+        "leaf_estimation_iterations": 10,
+        "leaf_estimation_method": "Newton",
+        "learning_rate": 0.03999999910593033,
+        "loss_function": "Logloss",
+        "max_ctr_complexity": 4,
+        "max_leaves": 32,
+        "min_data_in_leaf": 1,
+        "model_shrink_mode": "Constant",
+        "model_shrink_rate": 0,
+        "model_size_reg": 0.5,
+        "nan_mode": "Min",
+        "one_hot_max_size": 2,
+        "penalties_coefficient": 1,
+        "permutation_count": 4,
+        "pool_metainfo_options": {
+          "tags": {}
+        },
+        "posterior_sampling": false,
+        "random_score_type": "NormalWithModelSizeDecrease",
+        "random_seed": 1729,
+        "random_strength": 1,
+        "rsm": 1,
+        "sampling_frequency": "PerTree",
+        "score_function": "Cosine",
+        "simple_ctr": [
+          "Borders:CtrBorderCount=15:CtrBorderType=Uniform:TargetBorderCount=1:TargetBorderType=MinEntropy:Prior=0/1:Prior=0.5/1:Prior=1/1",
+          "Counter:CtrBorderCount=15:CtrBorderType=Uniform:Prior=0/1"
+        ],
+        "sparse_features_conflict_fraction": 0,
+        "store_all_simple_ctr": false,
+        "subsample": 0.800000011920929,
+        "task_type": "CPU",
+        "use_best_model": false
+      },
+      "get_params": {
+        "allow_writing_files": false,
+        "cat_features": [
+          162,
+          163,
+          164,
+          165,
+          166,
+          167,
+          168,
+          169,
+          170,
+          171,
+          172,
+          173,
+          174,
+          175
+        ],
+        "depth": 5,
+        "iterations": 1000,
+        "l2_leaf_reg": 5,
+        "learning_rate": 0.04,
+        "loss_function": "Logloss",
+        "random_seed": 1729,
+        "thread_count": 4,
+        "verbose": false
+      },
+      "note": "get_params includes explicit constructor/thread/categorical settings; get_all_params includes fitted effective defaults.",
+      "tree_count": 1000
+    },
+    "model/fold-3": {
+      "classes": [
+        0,
+        1
+      ],
+      "get_all_params": {
+        "auto_class_weights": "None",
+        "bayesian_matrix_reg": 0.10000000149011612,
+        "best_model_min_trees": 1,
+        "boost_from_average": false,
+        "boosting_type": "Plain",
+        "bootstrap_type": "MVS",
+        "border_count": 254,
+        "class_names": [
+          0,
+          1
+        ],
+        "classes_count": 0,
+        "combinations_ctr": [
+          "Borders:CtrBorderCount=15:CtrBorderType=Uniform:TargetBorderCount=1:TargetBorderType=MinEntropy:Prior=0/1:Prior=0.5/1:Prior=1/1",
+          "Counter:CtrBorderCount=15:CtrBorderType=Uniform:Prior=0/1"
+        ],
+        "counter_calc_method": "SkipTest",
+        "ctr_leaf_count_limit": 18446744073709551615,
+        "ctr_target_border_count": 1,
+        "depth": 5,
+        "eval_fraction": 0,
+        "eval_metric": "Logloss",
+        "feature_border_type": "GreedyLogSum",
+        "fold_permutation_block": 0,
+        "force_unit_auto_pair_weights": false,
+        "grow_policy": "SymmetricTree",
+        "has_time": false,
+        "iterations": 1000,
+        "l2_leaf_reg": 5,
+        "leaf_estimation_backtracking": "AnyImprovement",
+        "leaf_estimation_iterations": 10,
+        "leaf_estimation_method": "Newton",
+        "learning_rate": 0.03999999910593033,
+        "loss_function": "Logloss",
+        "max_ctr_complexity": 4,
+        "max_leaves": 32,
+        "min_data_in_leaf": 1,
+        "model_shrink_mode": "Constant",
+        "model_shrink_rate": 0,
+        "model_size_reg": 0.5,
+        "nan_mode": "Min",
+        "one_hot_max_size": 2,
+        "penalties_coefficient": 1,
+        "permutation_count": 4,
+        "pool_metainfo_options": {
+          "tags": {}
+        },
+        "posterior_sampling": false,
+        "random_score_type": "NormalWithModelSizeDecrease",
+        "random_seed": 1729,
+        "random_strength": 1,
+        "rsm": 1,
+        "sampling_frequency": "PerTree",
+        "score_function": "Cosine",
+        "simple_ctr": [
+          "Borders:CtrBorderCount=15:CtrBorderType=Uniform:TargetBorderCount=1:TargetBorderType=MinEntropy:Prior=0/1:Prior=0.5/1:Prior=1/1",
+          "Counter:CtrBorderCount=15:CtrBorderType=Uniform:Prior=0/1"
+        ],
+        "sparse_features_conflict_fraction": 0,
+        "store_all_simple_ctr": false,
+        "subsample": 0.800000011920929,
+        "task_type": "CPU",
+        "use_best_model": false
+      },
+      "get_params": {
+        "allow_writing_files": false,
+        "cat_features": [
+          162,
+          163,
+          164,
+          165,
+          166,
+          167,
+          168,
+          169,
+          170,
+          171,
+          172,
+          173,
+          174,
+          175
+        ],
+        "depth": 5,
+        "iterations": 1000,
+        "l2_leaf_reg": 5,
+        "learning_rate": 0.04,
+        "loss_function": "Logloss",
+        "random_seed": 1729,
+        "thread_count": 4,
+        "verbose": false
+      },
+      "note": "get_params includes explicit constructor/thread/categorical settings; get_all_params includes fitted effective defaults.",
+      "tree_count": 1000
+    },
+    "model/fold-4": {
+      "classes": [
+        0,
+        1
+      ],
+      "get_all_params": {
+        "auto_class_weights": "None",
+        "bayesian_matrix_reg": 0.10000000149011612,
+        "best_model_min_trees": 1,
+        "boost_from_average": false,
+        "boosting_type": "Plain",
+        "bootstrap_type": "MVS",
+        "border_count": 254,
+        "class_names": [
+          0,
+          1
+        ],
+        "classes_count": 0,
+        "combinations_ctr": [
+          "Borders:CtrBorderCount=15:CtrBorderType=Uniform:TargetBorderCount=1:TargetBorderType=MinEntropy:Prior=0/1:Prior=0.5/1:Prior=1/1",
+          "Counter:CtrBorderCount=15:CtrBorderType=Uniform:Prior=0/1"
+        ],
+        "counter_calc_method": "SkipTest",
+        "ctr_leaf_count_limit": 18446744073709551615,
+        "ctr_target_border_count": 1,
+        "depth": 5,
+        "eval_fraction": 0,
+        "eval_metric": "Logloss",
+        "feature_border_type": "GreedyLogSum",
+        "fold_permutation_block": 0,
+        "force_unit_auto_pair_weights": false,
+        "grow_policy": "SymmetricTree",
+        "has_time": false,
+        "iterations": 1000,
+        "l2_leaf_reg": 5,
+        "leaf_estimation_backtracking": "AnyImprovement",
+        "leaf_estimation_iterations": 10,
+        "leaf_estimation_method": "Newton",
+        "learning_rate": 0.03999999910593033,
+        "loss_function": "Logloss",
+        "max_ctr_complexity": 4,
+        "max_leaves": 32,
+        "min_data_in_leaf": 1,
+        "model_shrink_mode": "Constant",
+        "model_shrink_rate": 0,
+        "model_size_reg": 0.5,
+        "nan_mode": "Min",
+        "one_hot_max_size": 2,
+        "penalties_coefficient": 1,
+        "permutation_count": 4,
+        "pool_metainfo_options": {
+          "tags": {}
+        },
+        "posterior_sampling": false,
+        "random_score_type": "NormalWithModelSizeDecrease",
+        "random_seed": 1729,
+        "random_strength": 1,
+        "rsm": 1,
+        "sampling_frequency": "PerTree",
+        "score_function": "Cosine",
+        "simple_ctr": [
+          "Borders:CtrBorderCount=15:CtrBorderType=Uniform:TargetBorderCount=1:TargetBorderType=MinEntropy:Prior=0/1:Prior=0.5/1:Prior=1/1",
+          "Counter:CtrBorderCount=15:CtrBorderType=Uniform:Prior=0/1"
+        ],
+        "sparse_features_conflict_fraction": 0,
+        "store_all_simple_ctr": false,
+        "subsample": 0.800000011920929,
+        "task_type": "CPU",
+        "use_best_model": false
+      },
+      "get_params": {
+        "allow_writing_files": false,
+        "cat_features": [
+          162,
+          163,
+          164,
+          165,
+          166,
+          167,
+          168,
+          169,
+          170,
+          171,
+          172,
+          173,
+          174,
+          175
+        ],
+        "depth": 5,
+        "iterations": 1000,
+        "l2_leaf_reg": 5,
+        "learning_rate": 0.04,
+        "loss_function": "Logloss",
+        "random_seed": 1729,
+        "thread_count": 4,
+        "verbose": false
+      },
+      "note": "get_params includes explicit constructor/thread/categorical settings; get_all_params includes fitted effective defaults.",
+      "tree_count": 1000
+    },
+    "model/full": {
+      "classes": [
+        0,
+        1
+      ],
+      "get_all_params": {
+        "auto_class_weights": "None",
+        "bayesian_matrix_reg": 0.10000000149011612,
+        "best_model_min_trees": 1,
+        "boost_from_average": false,
+        "boosting_type": "Plain",
+        "bootstrap_type": "MVS",
+        "border_count": 254,
+        "class_names": [
+          0,
+          1
+        ],
+        "classes_count": 0,
+        "combinations_ctr": [
+          "Borders:CtrBorderCount=15:CtrBorderType=Uniform:TargetBorderCount=1:TargetBorderType=MinEntropy:Prior=0/1:Prior=0.5/1:Prior=1/1",
+          "Counter:CtrBorderCount=15:CtrBorderType=Uniform:Prior=0/1"
+        ],
+        "counter_calc_method": "SkipTest",
+        "ctr_leaf_count_limit": 18446744073709551615,
+        "ctr_target_border_count": 1,
+        "depth": 5,
+        "eval_fraction": 0,
+        "eval_metric": "Logloss",
+        "feature_border_type": "GreedyLogSum",
+        "fold_permutation_block": 0,
+        "force_unit_auto_pair_weights": false,
+        "grow_policy": "SymmetricTree",
+        "has_time": false,
+        "iterations": 1000,
+        "l2_leaf_reg": 5,
+        "leaf_estimation_backtracking": "AnyImprovement",
+        "leaf_estimation_iterations": 10,
+        "leaf_estimation_method": "Newton",
+        "learning_rate": 0.03999999910593033,
+        "loss_function": "Logloss",
+        "max_ctr_complexity": 4,
+        "max_leaves": 32,
+        "min_data_in_leaf": 1,
+        "model_shrink_mode": "Constant",
+        "model_shrink_rate": 0,
+        "model_size_reg": 0.5,
+        "nan_mode": "Min",
+        "one_hot_max_size": 2,
+        "penalties_coefficient": 1,
+        "permutation_count": 4,
+        "pool_metainfo_options": {
+          "tags": {}
+        },
+        "posterior_sampling": false,
+        "random_score_type": "NormalWithModelSizeDecrease",
+        "random_seed": 1729,
+        "random_strength": 1,
+        "rsm": 1,
+        "sampling_frequency": "PerTree",
+        "score_function": "Cosine",
+        "simple_ctr": [
+          "Borders:CtrBorderCount=15:CtrBorderType=Uniform:TargetBorderCount=1:TargetBorderType=MinEntropy:Prior=0/1:Prior=0.5/1:Prior=1/1",
+          "Counter:CtrBorderCount=15:CtrBorderType=Uniform:Prior=0/1"
+        ],
+        "sparse_features_conflict_fraction": 0,
+        "store_all_simple_ctr": false,
+        "subsample": 0.800000011920929,
+        "task_type": "CPU",
+        "use_best_model": false
+      },
+      "get_params": {
+        "allow_writing_files": false,
+        "cat_features": [
+          162,
+          163,
+          164,
+          165,
+          166,
+          167,
+          168,
+          169,
+          170,
+          171,
+          172,
+          173,
+          174,
+          175
+        ],
+        "depth": 5,
+        "iterations": 1000,
+        "l2_leaf_reg": 5,
+        "learning_rate": 0.04,
+        "loss_function": "Logloss",
+        "random_seed": 1729,
+        "thread_count": 4,
+        "verbose": false
+      },
+      "note": "get_params includes explicit constructor/thread/categorical settings; get_all_params includes fitted effective defaults.",
+      "tree_count": 1000
+    },
+    "scientific_protocol": {
+      "confirmation": "fold=-1 excluded from CV and selection; included only in frozen final full refit",
+      "cv_scope": "fold>=0 development only; entire connected component excluded",
+      "early_stopping": false,
+      "eval_set_passed_to_fit": false,
+      "explicit_model_params": {
+        "allow_writing_files": false,
+        "depth": 5,
+        "iterations": 1000,
+        "l2_leaf_reg": 5,
+        "learning_rate": 0.04,
+        "loss_function": "Logloss",
+        "random_seed": 1729,
+        "thread_count": 4,
+        "verbose": false
+      },
+      "http_service_implemented": false,
+      "metric_dtype": "float64, sklearn log_loss(labels=[0,1]), no custom clipping",
+      "model": "template",
+      "n_folds": 5,
+      "submission": "native full-refit probabilities only; NOT SUBMITTED"
+    },
+    "source_config_sha256": {
+      "configs/membership-v2.json": "e553e7bcdfa98b398b0a534a5d9fc095c5a19f60054f87c365cbe705d6b04dee",
+      "configs/template.json": "5a3b936da8215aaad4bf41fb6bd6924394d3ae6b8cd6b6eeda041e7f07b6c370",
+      "requirements.in": "9cf965e31f4a476ca2f245b7eff8ea3dbf8864e4d1e6881574b4783823a42062",
+      "requirements.lock": "8a4bc72436cd2aaf8d3a9dbdbeb568b3bba4d52dfb7cc3afba730fa7c80e1fa5",
+      "run.py": "72b73f31ab423e4e5dec87befac47473bcf0fbcde5a3d71b438dba01a1e80029",
+      "run.sh": "5cfa403618084b64d75f9966c5a0df5a3f8bfd7e7f20fe51da30188bd7ccfbe6",
+      "src/botbench.py": "eefbceba31ae9926b84baebecf23b6b2d797415e555c116f9e043461bcf53c3c",
+      "src/dependencies.py": "03ea3a0295cafcf7515d7aa69eb80ac2dc3c1ac990d09e6eb04289c1a30ee16a",
+      "src/eda.py": "da54c64797e8779fa22e197eab145fcf79594ce16eb15023393f8da13da42503",
+      "src/experiment.py": "950c028539c42550643c3beb3b8b391361a00658680fcac065a2a5160dfe159f",
+      "src/guards.py": "252234349eb9bfa506c6c85f3a3d7a2130cf8bab5b74e6dda0898814845455ec",
+      "src/origins.json": "cae898945b8ceecb52f972f2b19aa9208d7a0bfa823091e406972a218c8c2606",
+      "src/pipeline.py": "5039f21d469c801d4a9f66f4a64fd78cbd8d2454e7ae51be910ddeb788ad7183",
+      "src/tracking.py": "4d48629d0911cdb83c542deb8273e69e8954c11a7d9e1e0408c868c6895b3e85"
+    },
+    "source_origins": {
+      "files": {
+        "botbench.py": {
+          "adaptation": "Exact full copy; only pure loading, grouping, feature, fit/predict and CSV APIs used. Historical run()/provenance() are not invoked.",
+          "bytes": 11721,
+          "origin": "botbench.py",
+          "sha256": "eefbceba31ae9926b84baebecf23b6b2d797415e555c116f9e043461bcf53c3c"
+        },
+        "experiment.py": {
+          "adaptation": "Exact full copy; only pure loading, grouping, feature, fit/predict and CSV APIs used. Historical run()/provenance() are not invoked.",
+          "bytes": 11127,
+          "origin": "experiment.py",
+          "sha256": "950c028539c42550643c3beb3b8b391361a00658680fcac065a2a5160dfe159f"
+        }
+      },
+      "schema": "coursework.origins.v1"
+    }
+  },
+  "run_id": "native-reproduction-01",
+  "schema": "coursework.tracking.v1",
+  "started_utc": "2026-10-24T14:53:17.620099+00:00",
+  "status": "FINISHED"
+}

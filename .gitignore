@@ -1,0 +1,19 @@
+# Official contest data and local-only/generated state
+project/data/
+project/outputs/
+project/.venv/
+.venv/
+__pycache__/
+.pytest_cache/
+*.py[cod]
+.DS_Store
+*.joblib
+*.safetensors
+*.pt
+*.pkl
+*.pickle
+.env
+.env.*
+mlruns/
+COURSEWORK-CONTRACT.md
+# Curated small evidence JSON/SQLite/HTML is committed explicitly.
