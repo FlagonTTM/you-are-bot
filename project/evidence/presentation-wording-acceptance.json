@@ -1,0 +1,365 @@
+{
+  "artifact_sha256": "d04717d9960ec4800bd408d71cfec64513fbaaaf232a53244ec76dc4190273bd",
+  "browser": "direct opencli --profile v55e6gvm",
+  "session": "youarebot-wording",
+  "changed_slides": [
+    10,
+    17
+  ],
+  "all_slide_geometry": [
+    {
+      "clipped": [],
+      "contentOverflow": [
+        0,
+        0
+      ],
+      "index": 1,
+      "overflow": [
+        0,
+        0
+      ],
+      "viewport": [
+        1720,
+        950
+      ]
+    },
+    {
+      "clipped": [],
+      "contentOverflow": [
+        0,
+        0
+      ],
+      "index": 2,
+      "overflow": [
+        0,
+        0
+      ],
+      "viewport": [
+        1720,
+        950
+      ]
+    },
+    {
+      "clipped": [],
+      "contentOverflow": [
+        0,
+        0
+      ],
+      "index": 3,
+      "overflow": [
+        0,
+        0
+      ],
+      "viewport": [
+        1720,
+        950
+      ]
+    },
+    {
+      "clipped": [],
+      "contentOverflow": [
+        0,
+        0
+      ],
+      "index": 4,
+      "overflow": [
+        0,
+        0
+      ],
+      "viewport": [
+        1720,
+        950
+      ]
+    },
+    {
+      "clipped": [],
+      "contentOverflow": [
+        0,
+        0
+      ],
+      "index": 5,
+      "overflow": [
+        0,
+        0
+      ],
+      "viewport": [
+        1720,
+        950
+      ]
+    },
+    {
+      "clipped": [],
+      "contentOverflow": [
+        0,
+        0
+      ],
+      "index": 6,
+      "overflow": [
+        0,
+        0
+      ],
+      "viewport": [
+        1720,
+        950
+      ]
+    },
+    {
+      "clipped": [],
+      "contentOverflow": [
+        0,
+        0
+      ],
+      "index": 7,
+      "overflow": [
+        0,
+        0
+      ],
+      "viewport": [
+        1720,
+        950
+      ]
+    },
+    {
+      "clipped": [],
+      "contentOverflow": [
+        0,
+        0
+      ],
+      "index": 8,
+      "overflow": [
+        0,
+        0
+      ],
+      "viewport": [
+        1720,
+        950
+      ]
+    },
+    {
+      "clipped": [],
+      "contentOverflow": [
+        0,
+        0
+      ],
+      "index": 9,
+      "overflow": [
+        0,
+        0
+      ],
+      "viewport": [
+        1720,
+        950
+      ]
+    },
+    {
+      "clipped": [],
+      "contentOverflow": [
+        0,
+        0
+      ],
+      "index": 10,
+      "overflow": [
+        0,
+        0
+      ],
+      "viewport": [
+        1720,
+        950
+      ],
+      "text": "06 / АНСАМБЛЬ\nОдин диалог.\nДва разных источника сигнала.\np = 0.5 pCatBoost\n+ 0.5 pLLM\n01\nКонтекст\n\nВесь диалог и native prior. Текст — данные, а не инструкции.\n\n02\nTRAIN-only retrieval\n\nБлижайшие обучающие примеры. Без меток оцениваемых групп.\n\n03\nСтруктурированный ответ\n\nОтдельные вероятности p₀ и p₁, затем фиксированная смесь.\n\nИспользовали ансамбль CatBoost и предобученной языковой модели.\nИтоговая вероятность — среднее прогнозов двух компонентов с весами 50/50.\n\nllm/config.json · Источники ↗\n10 / 21",
+      "screenshot": "project/evidence/presentation-wording-slide-10.png"
+    },
+    {
+      "clipped": [],
+      "contentOverflow": [
+        0,
+        0
+      ],
+      "index": 11,
+      "overflow": [
+        0,
+        0
+      ],
+      "viewport": [
+        1720,
+        950
+      ]
+    },
+    {
+      "clipped": [],
+      "contentOverflow": [
+        0,
+        0
+      ],
+      "index": 12,
+      "overflow": [
+        0,
+        0
+      ],
+      "viewport": [
+        1720,
+        950
+      ]
+    },
+    {
+      "clipped": [],
+      "contentOverflow": [
+        0,
+        0
+      ],
+      "index": 13,
+      "overflow": [
+        0,
+        0
+      ],
+      "viewport": [
+        1720,
+        950
+      ]
+    },
+    {
+      "clipped": [],
+      "contentOverflow": [
+        0,
+        0
+      ],
+      "index": 14,
+      "overflow": [
+        0,
+        0
+      ],
+      "viewport": [
+        1720,
+        950
+      ]
+    },
+    {
+      "clipped": [],
+      "contentOverflow": [
+        0,
+        0
+      ],
+      "index": 15,
+      "overflow": [
+        0,
+        0
+      ],
+      "viewport": [
+        1720,
+        950
+      ]
+    },
+    {
+      "clipped": [],
+      "contentOverflow": [
+        0,
+        0
+      ],
+      "index": 16,
+      "overflow": [
+        0,
+        0
+      ],
+      "viewport": [
+        1720,
+        950
+      ]
+    },
+    {
+      "clipped": [],
+      "contentOverflow": [
+        0,
+        0
+      ],
+      "index": 17,
+      "overflow": [
+        0,
+        0
+      ],
+      "viewport": [
+        1720,
+        950
+      ],
+      "text": "11 / КОД И ОКРУЖЕНИЕ\nЗависимости зафиксированы.\nВходы передаются явно.\n01\nКод в project/\n\nrun_ensemble.sh — один запуск. run_ensemble.py — обработка и обучение на Python.\n\n02\nPinned dependencies\n\nrequirements.lock фиксирует Python-зависимости. Официальные данные получаются отдельно.\n\n03\nРежим LLM\n\ncached — exact replay; fresh — новые ответы предобученной языковой модели. Нужен доступ к ней.\n\nПриватный репозиторий\n\nFlagonTTM / you-are-bot ↗\n\nДля просмотра нужен доступ. Сырые данные,\nаккаунтные файлы и веса не включены в Git.\n\nГраницы проверки\n\ncached: 6 fits и точный historical CSV.\nfresh: 6 fits и реальные новые LLM-ответы.\nЧистая установка lockfile в новой среде не подтверждена.\n\nENSEMBLE.md · Источники ↗\n17 / 21",
+      "screenshot": "project/evidence/presentation-wording-slide-17.png"
+    },
+    {
+      "clipped": [],
+      "contentOverflow": [
+        0,
+        0
+      ],
+      "index": 18,
+      "overflow": [
+        0,
+        0
+      ],
+      "viewport": [
+        1720,
+        950
+      ]
+    },
+    {
+      "clipped": [],
+      "contentOverflow": [
+        0,
+        0
+      ],
+      "index": 19,
+      "overflow": [
+        0,
+        0
+      ],
+      "viewport": [
+        1720,
+        950
+      ]
+    },
+    {
+      "clipped": [],
+      "contentOverflow": [
+        0,
+        0
+      ],
+      "index": 20,
+      "overflow": [
+        0,
+        0
+      ],
+      "viewport": [
+        1720,
+        950
+      ]
+    },
+    {
+      "clipped": [],
+      "contentOverflow": [
+        0,
+        0
+      ],
+      "index": 21,
+      "overflow": [
+        0,
+        0
+      ],
+      "viewport": [
+        1720,
+        950
+      ]
+    }
+  ],
+  "console": {
+    "session": "youarebot-wording",
+    "captured_at": "2026-10-27T23:18:04.922Z",
+    "count": 0,
+    "messages": []
+  },
+  "static_tests": 6,
+  "unchanged": [
+    "other 19 slides",
+    "styles",
+    "scripts",
+    "embedded provenance",
+    "report.html"
+  ]
+}

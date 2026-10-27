@@ -533,7 +533,7 @@ def build_document(project: Path) -> tuple[str, dict]:
         f'<span>50 / 50<small>{te["participant_rows"]} TEST-строк + tracker</small></span></div>'
         + mode_table +
         '<p>Обработка данных и обучение · Python: <code>run_ensemble.py</code> → <code>src/eda.py</code>, <code>src/pipeline.py</code>, <code>src/experiment.py</code>.</p>'
-        '<p class="caption">Python-зависимости зафиксированы в <code>requirements.lock</code>. Для fresh дополнительно нужен авторизованный Codex CLI 0.163.0; модель gpt-6.1-sol, reasoning high. Установка зависимостей и получение официальных данных — явные предварительные шаги.</p>'
+        '<p class="caption">Python-зависимости зафиксированы в <code>requirements.lock</code>. Для fresh дополнительно нужен авторизованный доступ к внешней предобученной языковой модели. Точные требования сохранены в <code>llm/config.json</code> и <code>llm/adapter.py</code>. Установка зависимостей и получение официальных данных — явные предварительные шаги.</p>'
         '<h3>Отдельно: проверка CatBoost-компонента</h3>'
         f'<div class="proof"><div class="stack tight">{status_html}{proof_detail}</div>'
         '<div class="stack tight"><p>Код — внутри project/.<br>Зависимости — exact pinned.</p>'

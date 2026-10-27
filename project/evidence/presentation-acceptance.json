@@ -1,0 +1,779 @@
+{
+  "schema": "youarebot.presentation-acceptance.v1",
+  "browser_method": "direct opencli --profile v55e6gvm; session youarebot-slides",
+  "artifact": "YouAreBot_CU_Presentation.html",
+  "sha256": "65e1608e7b4a7d28e06a027d8a63216863ac91432e7519dae96b1162faacebfa",
+  "source_report_sha256": "b346979a0fdd24c109d310946f924c024175f7b3bcc4e056aeeefb85a8c1d7e0",
+  "viewport_css": [
+    1720,
+    950
+  ],
+  "dpr": 2,
+  "slide_count": 21,
+  "all_slide_geometry": [
+    {
+      "clipped": [],
+      "compact": false,
+      "contentOverflow": [
+        0,
+        0
+      ],
+      "id": "s1",
+      "index": 1,
+      "overflow": [
+        0,
+        0
+      ],
+      "viewport": [
+        1720,
+        950
+      ]
+    },
+    {
+      "clipped": [],
+      "compact": false,
+      "contentOverflow": [
+        0,
+        0
+      ],
+      "id": "s2",
+      "index": 2,
+      "overflow": [
+        0,
+        0
+      ],
+      "viewport": [
+        1720,
+        950
+      ]
+    },
+    {
+      "clipped": [],
+      "compact": true,
+      "contentOverflow": [
+        0,
+        0
+      ],
+      "id": "s3",
+      "index": 3,
+      "overflow": [
+        0,
+        0
+      ],
+      "viewport": [
+        1720,
+        950
+      ]
+    },
+    {
+      "clipped": [],
+      "compact": false,
+      "contentOverflow": [
+        0,
+        0
+      ],
+      "id": "s4",
+      "index": 4,
+      "overflow": [
+        0,
+        0
+      ],
+      "viewport": [
+        1720,
+        950
+      ]
+    },
+    {
+      "clipped": [],
+      "compact": false,
+      "contentOverflow": [
+        0,
+        0
+      ],
+      "id": "s5",
+      "index": 5,
+      "overflow": [
+        0,
+        0
+      ],
+      "viewport": [
+        1720,
+        950
+      ]
+    },
+    {
+      "clipped": [],
+      "compact": false,
+      "contentOverflow": [
+        0,
+        0
+      ],
+      "id": "s6",
+      "index": 6,
+      "overflow": [
+        0,
+        0
+      ],
+      "viewport": [
+        1720,
+        950
+      ]
+    },
+    {
+      "clipped": [],
+      "compact": false,
+      "contentOverflow": [
+        0,
+        0
+      ],
+      "id": "s7",
+      "index": 7,
+      "overflow": [
+        0,
+        0
+      ],
+      "viewport": [
+        1720,
+        950
+      ]
+    },
+    {
+      "clipped": [],
+      "compact": false,
+      "contentOverflow": [
+        0,
+        0
+      ],
+      "id": "s8",
+      "index": 8,
+      "overflow": [
+        0,
+        0
+      ],
+      "viewport": [
+        1720,
+        950
+      ]
+    },
+    {
+      "clipped": [],
+      "compact": false,
+      "contentOverflow": [
+        0,
+        0
+      ],
+      "id": "s9",
+      "index": 9,
+      "overflow": [
+        0,
+        0
+      ],
+      "viewport": [
+        1720,
+        950
+      ]
+    },
+    {
+      "clipped": [],
+      "compact": true,
+      "contentOverflow": [
+        0,
+        0
+      ],
+      "id": "s10",
+      "index": 10,
+      "overflow": [
+        0,
+        0
+      ],
+      "viewport": [
+        1720,
+        950
+      ]
+    },
+    {
+      "clipped": [],
+      "compact": false,
+      "contentOverflow": [
+        0,
+        0
+      ],
+      "id": "s11",
+      "index": 11,
+      "overflow": [
+        0,
+        0
+      ],
+      "viewport": [
+        1720,
+        950
+      ]
+    },
+    {
+      "clipped": [],
+      "compact": false,
+      "contentOverflow": [
+        0,
+        0
+      ],
+      "id": "s12",
+      "index": 12,
+      "overflow": [
+        0,
+        0
+      ],
+      "viewport": [
+        1720,
+        950
+      ]
+    },
+    {
+      "clipped": [],
+      "compact": false,
+      "contentOverflow": [
+        0,
+        0
+      ],
+      "id": "s13",
+      "index": 13,
+      "overflow": [
+        0,
+        0
+      ],
+      "viewport": [
+        1720,
+        950
+      ]
+    },
+    {
+      "clipped": [],
+      "compact": true,
+      "contentOverflow": [
+        0,
+        0
+      ],
+      "id": "s14",
+      "index": 14,
+      "overflow": [
+        0,
+        0
+      ],
+      "viewport": [
+        1720,
+        950
+      ]
+    },
+    {
+      "clipped": [],
+      "compact": true,
+      "contentOverflow": [
+        0,
+        0
+      ],
+      "id": "s15",
+      "index": 15,
+      "overflow": [
+        0,
+        0
+      ],
+      "viewport": [
+        1720,
+        950
+      ]
+    },
+    {
+      "clipped": [],
+      "compact": true,
+      "contentOverflow": [
+        0,
+        0
+      ],
+      "id": "s16",
+      "index": 16,
+      "overflow": [
+        0,
+        0
+      ],
+      "viewport": [
+        1720,
+        950
+      ]
+    },
+    {
+      "clipped": [],
+      "compact": false,
+      "contentOverflow": [
+        0,
+        0
+      ],
+      "id": "s17",
+      "index": 17,
+      "overflow": [
+        0,
+        0
+      ],
+      "viewport": [
+        1720,
+        950
+      ]
+    },
+    {
+      "clipped": [],
+      "compact": false,
+      "contentOverflow": [
+        0,
+        0
+      ],
+      "id": "s18",
+      "index": 18,
+      "overflow": [
+        0,
+        0
+      ],
+      "viewport": [
+        1720,
+        950
+      ]
+    },
+    {
+      "clipped": [],
+      "compact": false,
+      "contentOverflow": [
+        0,
+        0
+      ],
+      "id": "s19",
+      "index": 19,
+      "overflow": [
+        0,
+        0
+      ],
+      "viewport": [
+        1720,
+        950
+      ]
+    },
+    {
+      "clipped": [],
+      "compact": false,
+      "contentOverflow": [
+        0,
+        0
+      ],
+      "id": "s20",
+      "index": 20,
+      "overflow": [
+        0,
+        0
+      ],
+      "viewport": [
+        1720,
+        950
+      ]
+    },
+    {
+      "clipped": [],
+      "compact": false,
+      "contentOverflow": [
+        0,
+        0
+      ],
+      "id": "s21",
+      "index": 21,
+      "overflow": [
+        0,
+        0
+      ],
+      "viewport": [
+        1720,
+        950
+      ]
+    }
+  ],
+  "interactions": [
+    {
+      "command": [
+        "eval",
+        "(() => {window.__deckQa=[];document.addEventListener('keydown',e=>window.__deckQa.push({key:e.key,index:window.presentation.index,motion:window.presentation.motion,animations:document.getAnimations().length}));return {installed:true}})()"
+      ],
+      "result": {
+        "installed": true
+      }
+    },
+    {
+      "command": [
+        "keys",
+        "ArrowLeft"
+      ],
+      "result": "Pressed: ArrowLeft"
+    },
+    {
+      "command": [
+        "keys",
+        "m"
+      ],
+      "result": "Pressed: m"
+    },
+    {
+      "command": [
+        "keys",
+        "ArrowRight"
+      ],
+      "result": "Pressed: ArrowRight"
+    },
+    {
+      "command": [
+        "keys",
+        "m"
+      ],
+      "result": "Pressed: m"
+    },
+    {
+      "command": [
+        "keys",
+        "ArrowRight"
+      ],
+      "result": "Pressed: ArrowRight"
+    },
+    {
+      "command": [
+        "eval",
+        "window.__deckQa"
+      ],
+      "result": [
+        {
+          "animations": 3,
+          "index": 8,
+          "key": "ArrowLeft",
+          "motion": true
+        },
+        {
+          "animations": 0,
+          "index": 8,
+          "key": "m",
+          "motion": false
+        },
+        {
+          "animations": 0,
+          "index": 9,
+          "key": "ArrowRight",
+          "motion": false
+        },
+        {
+          "animations": 0,
+          "index": 9,
+          "key": "m",
+          "motion": true
+        },
+        {
+          "animations": 4,
+          "index": 10,
+          "key": "ArrowRight",
+          "motion": true
+        }
+      ]
+    },
+    {
+      "command": [
+        "click",
+        "#overview"
+      ],
+      "result": {
+        "clicked": true,
+        "target": "#overview",
+        "matches_n": 1,
+        "match_level": "exact",
+        "click_method": "cdp",
+        "hit": "target"
+      }
+    },
+    {
+      "command": [
+        "eval",
+        "({open:!document.querySelector(\"#overview-modal\").hidden,count:document.querySelectorAll(\".overview-item\").length,inert:document.querySelector(\"#stage\").inert})"
+      ],
+      "result": {
+        "count": 21,
+        "inert": true,
+        "open": true
+      }
+    },
+    {
+      "command": [
+        "click",
+        ".overview-item",
+        "--nth",
+        "8"
+      ],
+      "result": {
+        "clicked": true,
+        "target": ".overview-item",
+        "matches_n": 21,
+        "match_level": "exact",
+        "click_method": "cdp",
+        "hit": "target"
+      }
+    },
+    {
+      "command": [
+        "eval",
+        "({index:window.presentation.index,open:!document.querySelector(\"#overview-modal\").hidden})"
+      ],
+      "result": {
+        "index": 9,
+        "open": false
+      }
+    },
+    {
+      "command": [
+        "click",
+        "#sources"
+      ],
+      "result": {
+        "clicked": true,
+        "target": "#sources",
+        "matches_n": 1,
+        "match_level": "exact",
+        "click_method": "cdp",
+        "hit": "target"
+      }
+    },
+    {
+      "command": [
+        "eval",
+        "({open:!document.querySelector(\"#sources-modal\").hidden,count:document.querySelectorAll(\".source-ledger>div\").length})"
+      ],
+      "result": {
+        "count": 22,
+        "open": true
+      }
+    },
+    {
+      "command": [
+        "keys",
+        "Escape"
+      ],
+      "result": "Pressed: Escape"
+    },
+    {
+      "command": [
+        "eval",
+        "({focus:document.activeElement.id,inert:document.querySelector(\"#stage\").inert})"
+      ],
+      "result": {
+        "focus": "sources",
+        "inert": false
+      }
+    },
+    {
+      "command": [
+        "click",
+        "#next"
+      ],
+      "result": {
+        "clicked": true,
+        "target": "#next",
+        "matches_n": 1,
+        "match_level": "exact",
+        "click_method": "cdp",
+        "hit": "target"
+      }
+    },
+    {
+      "command": [
+        "eval",
+        "window.presentation.index"
+      ],
+      "result": 10
+    },
+    {
+      "command": [
+        "keys",
+        "ArrowRight"
+      ],
+      "result": "Pressed: ArrowRight"
+    },
+    {
+      "command": [
+        "eval",
+        "window.presentation.index"
+      ],
+      "result": 11
+    },
+    {
+      "command": [
+        "keys",
+        "f"
+      ],
+      "result": "Pressed: f"
+    },
+    {
+      "command": [
+        "eval",
+        "Boolean(document.fullscreenElement)"
+      ],
+      "result": true
+    },
+    {
+      "command": [
+        "keys",
+        "f"
+      ],
+      "result": "Pressed: f"
+    },
+    {
+      "command": [
+        "eval",
+        "Boolean(document.fullscreenElement)"
+      ],
+      "result": false
+    },
+    {
+      "command": [
+        "click",
+        "#reading"
+      ],
+      "result": {
+        "clicked": true,
+        "target": "#reading",
+        "matches_n": 1,
+        "match_level": "exact",
+        "click_method": "cdp",
+        "hit": "target"
+      }
+    },
+    {
+      "command": [
+        "eval",
+        "({reading:!window.presentation.ready,visible:[...document.querySelectorAll(\".slide\")].filter(e=>getComputedStyle(e).display!==\"none\").length,inert:[...document.querySelectorAll(\".slide\")].some(e=>e.inert)})"
+      ],
+      "result": {
+        "inert": false,
+        "reading": true,
+        "visible": 21
+      }
+    },
+    {
+      "command": [
+        "screenshot",
+        "/Users/Ivan/.hermes/profiles/hackatons/cache/scratch/youarebot-slide-qa/mobile-reading.png",
+        "--width",
+        "390",
+        "--height",
+        "844"
+      ],
+      "result": "Screenshot saved to: /Users/Ivan/.hermes/profiles/hackatons/cache/scratch/youarebot-slide-qa/mobile-reading.png"
+    },
+    {
+      "command": [
+        "click",
+        "#resume"
+      ],
+      "result": {
+        "clicked": true,
+        "target": "#resume",
+        "matches_n": 1,
+        "match_level": "exact",
+        "click_method": "cdp",
+        "hit": "target"
+      }
+    },
+    {
+      "command": [
+        "eval",
+        "window.presentation.ready"
+      ],
+      "result": true
+    },
+    {
+      "command": [
+        "open",
+        "http://127.0.0.1:61941/YouAreBot_CU_Presentation.html?qa=persistence-v1"
+      ],
+      "result": {
+        "url": "http://127.0.0.1:61941/YouAreBot_CU_Presentation.html?qa=persistence-v1",
+        "page": "D8DD42EDEAF1A4522BB1FAF868E6A7DB"
+      }
+    },
+    {
+      "command": [
+        "eval",
+        "window.presentation.index"
+      ],
+      "result": 11
+    },
+    {
+      "command": [
+        "keys",
+        "Home"
+      ],
+      "result": "Pressed: Home"
+    },
+    {
+      "command": [
+        "eval",
+        "window.presentation.index"
+      ],
+      "result": 1
+    },
+    {
+      "command": [
+        "keys",
+        "End"
+      ],
+      "result": "Pressed: End"
+    },
+    {
+      "command": [
+        "eval",
+        "window.presentation.index"
+      ],
+      "result": 21
+    },
+    {
+      "command": [
+        "keys",
+        "Home"
+      ],
+      "result": "Pressed: Home"
+    },
+    {
+      "command": [
+        "eval",
+        "({fonts:document.fonts.status,overflow:[document.documentElement.scrollWidth-document.documentElement.clientWidth,document.documentElement.scrollHeight-document.documentElement.clientHeight],resourceURLs:performance.getEntriesByType(\"resource\").map(x=>x.name),state:window.presentation})"
+      ],
+      "result": {
+        "fonts": "loaded",
+        "overflow": [
+          0,
+          0
+        ],
+        "resourceURLs": [],
+        "state": {
+          "index": 1,
+          "motion": true,
+          "ready": true,
+          "total": 21
+        }
+      }
+    }
+  ],
+  "console_messages": 0,
+  "static_tests": {
+    "command": "python3 -m unittest discover -s project/report_tests -p test_*.py",
+    "tests": 5,
+    "status": "PASS"
+  },
+  "screenshots": {
+    "presentation-title.png": "a92a71ae32ea6f0b83926f1a8d4ea548f4c47a85a6a93399cfe0533df7abb727",
+    "presentation-models.png": "b1fa5843f397c89148fb06a3fa0ffb9808a0161d9f2530d2bc31dedee2dabe7e",
+    "presentation-tracking.png": "118abdea7c8a6a1a416353d113c41be05e0fc9810908fdd9cce7cf6c7cba32f6",
+    "presentation-mobile-reading.png": "a410e67176b1f4520aada482c8d7991645408bb2ffe2a9c210064714117cd1e0",
+    "presentation-contact-sheet.png": "aa6246fda985390606e8e8f1cace14f1bbf7a237f8f8f33be6e67326862df292"
+  },
+  "limits": [
+    "Print/PDF output not exercised; print CSS is included.",
+    "Real touch-device swipe not exercised; mobile reading checked via OpenCLI screenshot at 390x844.",
+    "No new training, contest submission, commit, push or publication performed."
+  ]
+}

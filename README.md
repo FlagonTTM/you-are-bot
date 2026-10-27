@@ -12,7 +12,7 @@
 ./project/run_ensemble.sh --data-dir /path/to/contest --llm-mode fresh
 ```
 
-Cached предназначен для точного повторения прежнего CSV; fresh воспроизводит метод, но не гарантирует одинаковые ответы внешней модели и тот же public score. Для fresh нужен авторизованный **Codex CLI 0.163.0**, модель **gpt-6.1-sol**. Аккаунт и секреты в пакет не входят. Автоматического перехода между режимами нет. Подробности — [`project/ENSEMBLE.md`](project/ENSEMBLE.md).
+Cached предназначен для точного повторения прежнего CSV; fresh воспроизводит метод, но не гарантирует одинаковые ответы внешней модели и тот же public score. Для fresh нужен авторизованный интерфейс доступа к внешней предобученной языковой модели; точные требования сохранены в [`project/llm/config.json`](project/llm/config.json) и [`project/llm/adapter.py`](project/llm/adapter.py). Аккаунт и секреты в пакет не входят. Автоматического перехода между режимами нет. Подробности — [`project/ENSEMBLE.md`](project/ENSEMBLE.md).
 
 Отдельный минимальный **арифметический replay** сохранён в [`project/ensemble/`](project/ensemble/): `python3 project/ensemble/run.py`. Он не обучает модели и не заменяет основной эксперимент для рубежного контроля.
 
