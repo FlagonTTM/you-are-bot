@@ -1,0 +1,71 @@
+{
+  "schema": "you-are-bot.ensemble-replay.v1",
+  "mode": "saved_component_predictions_replay",
+  "rows": 758,
+  "weights": {
+    "catboost": 0.5,
+    "llm": 0.5
+  },
+  "components_file": "components.csv",
+  "components_sha256": "ed36be23cfb492ac2dfdd77298bf998b64c900703db3b06f97af2a4e4bb6ab6e",
+  "submission_sha256": "4bde02a00f00d009ad69c3aa967c00e468a41c0bcb2b90f65b93416abb3d4639",
+  "historical_submission_id": 10588,
+  "historical_public_logloss": "0.1303426569",
+  "llm_model_requested": "gpt-6.1-sol",
+  "source_generation_manifest_sha256": "9818f150c0de6463a8e0fc3e7493b19d10b1458accabd8f57dfb2917fea0f1a8",
+  "source_generation_bridge_sha256": "dc95650cc3cf3081e87c2849a03d3f332c6b43e0fbdca5e95167d57253b118d6",
+  "verified_llm_batches": 10,
+  "source_batch_digests": {
+    "batch-00": {
+      "input_sha256": "893f525d88feeb0afc7574c367680cc0dee3ee745dadbbe8048af95ea77f2b85",
+      "prompt_sha256": "e4efbd8a16d1abd25878025b637dc102126d31449252f7b88dfc8e5400c53490",
+      "output_sha256": "73ddc61821143f93b5952ee3fb01727898cc8d4393b1b03e53a2e34709bb5b56"
+    },
+    "batch-01": {
+      "input_sha256": "acfaffa9c59132460b88e108a61cb874943fd557a560d5f76a6ffd98a1d9795c",
+      "prompt_sha256": "e525dc9ed230ccd5bbe662668c07d1dba2d1d2a38980e655c40ccb28c292da13",
+      "output_sha256": "dab4ecdc0c6128f89ff3fe972ce6eab87b19e699a6f0ef83ab016a50396000da"
+    },
+    "batch-02": {
+      "input_sha256": "5b93e709877ca2d97480ec5e17f55689f8318afe431b51aeafe13ea8cbd2a815",
+      "prompt_sha256": "4fef2ae3f456ce5b6dc86ecebe6653abbff001d567e8cb7b377fd8d110f27238",
+      "output_sha256": "f9b990355a851169acec69b45af142d5b4f07a249c31b2253a41b0f9d74aa472"
+    },
+    "batch-03": {
+      "input_sha256": "4d071f266ad0c6e58b81da9f646c0d05811d68953cdaeb6a004bac71bb8c005c",
+      "prompt_sha256": "6763bf9eb69c155c5dfeccb8f3fc0febba7bb34792be00dd590eb0536ec592aa",
+      "output_sha256": "f074029bdb84388cef480e7fd8a5de1182997290b0fa488dc1df182078a04129"
+    },
+    "batch-04": {
+      "input_sha256": "2a99bb9cc049cb72bb687d9c29e139aac613e2a13937b2c49922d31d84e44d3e",
+      "prompt_sha256": "b814fd4ce642b8072d900cdd1c36662b9344fc41c8781502cb3e82be0ea98cde",
+      "output_sha256": "5fba2252c48b8b5a102a12fe58dccce179ecd12c6f866f5d2a63b7836d5e6ff5"
+    },
+    "batch-05": {
+      "input_sha256": "4a4cefcb93cc0fed596f771b34ab5e32a70371d8bd508d5503a96710f0467254",
+      "prompt_sha256": "2cc54c6224280f34ae5beb438e5fce93f9287cec95fbc1d540e4f6d51f5da485",
+      "output_sha256": "8340b0834d97af78efeb8fdf036f2420e06f467df57fd5d46695fb6b6ec68ffb"
+    },
+    "batch-06": {
+      "input_sha256": "9a178a5ed4be138761638b109a27e2c327a731f896a8a86619e9dd744c5bb66e",
+      "prompt_sha256": "6db8d37df0d72cd4001134e46ea532d3155acf02fa2300b629c2f8a45e3e6395",
+      "output_sha256": "24479728b093228a4c61de41f60b513ecacb87129b9b840298c3477feba683a9"
+    },
+    "batch-07": {
+      "input_sha256": "b3891d3f946c2ead9a3feaf79b3c67e597b14303c272958537f369671ae73daf",
+      "prompt_sha256": "f0b81f9c953abb200cee3a20f22c11c0d2da797af13eb38cb70ca056f916917c",
+      "output_sha256": "f851623b5eb2f79fd321a0d79832b581a4cc206064bd49b5b972d7203be09117"
+    },
+    "batch-08": {
+      "input_sha256": "0a2efdd44ed3cdf5323bb6bc0553e06fdcb8bbdbe3d4010069542a24e69d795d",
+      "prompt_sha256": "092f1277df127d0f4503dd76a90c87d0590fa51eda7b0ad9a269f458d88b5b32",
+      "output_sha256": "9eed87ae75d666293d68e41744b36848f5f49fac4cec8f22e956b118aeafb196"
+    },
+    "batch-09": {
+      "input_sha256": "18ce46632acdbb18087d7d232fa93d417e806e748d9896513b704ac9204dad98",
+      "prompt_sha256": "178924b4bdb5b9b3752ad4d816f1c78caf05f25d513fa8577388cea2238a2d8d",
+      "output_sha256": "484de11c9a96b2d639b3653e1c80d0f8b2892691375c15e52e7528efe9797ea4"
+    }
+  },
+  "scope": "Recomputes ensemble from genuine frozen component predictions. No model training, fresh LLM inference, scoring API or contest upload."
+}

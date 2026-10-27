@@ -1,3 +1,4 @@
 # Preserve the exact generated CSV bytes (stdlib csv uses CRLF).
 # CR at EOL is valid CSV, not accidental trailing whitespace.
 project/evidence/reproduction/*.csv -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+project/ensemble/components.csv -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
