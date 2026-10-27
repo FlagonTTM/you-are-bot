@@ -1,0 +1,20 @@
+{
+  "schema": "coursework.ensemble.config.v1",
+  "bridge_sha256": "63821f37719cae16c335f20a39862a8e53cc5a662948701f122d326acc925f6d",
+  "historical_bridge_sha256": "dc95650cc3cf3081e87c2849a03d3f332c6b43e0fbdca5e95167d57253b118d6",
+  "scientific_symbols": ["MODEL", "PROMPT", "validate_output", "first_text", "prepare_batch"],
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "codex_cli_version": "0.163.0",
+  "dialogs_per_batch": 40,
+  "maximum_batches": 10,
+  "timeout_seconds": 601,
+  "weights": {"catboost": 0.5, "llm": 0.5},
+  "components_sha256": "ed36be23cfb492ac2dfdd77298bf998b64c900703db3b06f97af2a4e4bb6ab6e",
+  "cache_manifest_sha256": "382bc9a1381599993ee6784f287f09f8f99a8afab2a99dc70a8f7c40df6cc6e8",
+  "submission_sha256": "4bde02a00f00d009ad69c3aa967c00e468a41c0bcb2b90f65b93416abb3d4639",
+  "retrieval": {"analyzer": "char_wb", "ngram_range": [2, 4], "min_df": 1, "max_features": 70000, "sublinear_tf": true, "nearest_per_class": 2, "train_scope": "all 3032 official TRAIN participants only", "exact_first_message_counts": true},
+  "truncation": {"dialog_messages_limit": 40, "long_dialog_first": 30, "long_dialog_last": 10, "message_characters": 1800, "reference_own_characters": 500, "reference_other_characters": 250},
+  "decoder": "independent p0/p1; finite 0<p<1; no complement, clipping, rounding or weight tuning",
+  "serialization": {"encoding": "UTF-8", "csv_line_terminator": "CRLF", "float": "Python float64 round-trip str"}
+}

@@ -1,0 +1,11 @@
+{
+  "encoding": "UTF-8",
+  "line_terminator": "CRLF",
+  "rows": 758,
+  "sha256": "24818fbd65a92c78fda05ca646b55c3db4d09125249e765cf213a93a7413fdfe",
+  "submitted": false,
+  "weights": {
+    "catboost": 0.5,
+    "llm": 0.5
+  }
+}

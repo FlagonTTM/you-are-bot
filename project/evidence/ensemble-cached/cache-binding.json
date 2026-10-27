@@ -1,0 +1,46 @@
+{
+  "all_exact": true,
+  "batches": {
+    "batch-00": {
+      "input_sha256": "893f525d88feeb0afc7574c367680cc0dee3ee745dadbbe8048af95ea77f2b85",
+      "prompt_sha256": "e4efbd8a16d1abd25878025b637dc102126d31449252f7b88dfc8e5400c53490"
+    },
+    "batch-01": {
+      "input_sha256": "acfaffa9c59132460b88e108a61cb874943fd557a560d5f76a6ffd98a1d9795c",
+      "prompt_sha256": "e525dc9ed230ccd5bbe662668c07d1dba2d1d2a38980e655c40ccb28c292da13"
+    },
+    "batch-02": {
+      "input_sha256": "5b93e709877ca2d97480ec5e17f55689f8318afe431b51aeafe13ea8cbd2a815",
+      "prompt_sha256": "4fef2ae3f456ce5b6dc86ecebe6653abbff001d567e8cb7b377fd8d110f27238"
+    },
+    "batch-03": {
+      "input_sha256": "4d071f266ad0c6e58b81da9f646c0d05811d68953cdaeb6a004bac71bb8c005c",
+      "prompt_sha256": "6763bf9eb69c155c5dfeccb8f3fc0febba7bb34792be00dd590eb0536ec592aa"
+    },
+    "batch-04": {
+      "input_sha256": "2a99bb9cc049cb72bb687d9c29e139aac613e2a13937b2c49922d31d84e44d3e",
+      "prompt_sha256": "b814fd4ce642b8072d900cdd1c36662b9344fc41c8781502cb3e82be0ea98cde"
+    },
+    "batch-05": {
+      "input_sha256": "4a4cefcb93cc0fed596f771b34ab5e32a70371d8bd508d5503a96710f0467254",
+      "prompt_sha256": "2cc54c6224280f34ae5beb438e5fce93f9287cec95fbc1d540e4f6d51f5da485"
+    },
+    "batch-06": {
+      "input_sha256": "9a178a5ed4be138761638b109a27e2c327a731f896a8a86619e9dd744c5bb66e",
+      "prompt_sha256": "6db8d37df0d72cd4001134e46ea532d3155acf02fa2300b629c2f8a45e3e6395"
+    },
+    "batch-07": {
+      "input_sha256": "b3891d3f946c2ead9a3feaf79b3c67e597b14303c272958537f369671ae73daf",
+      "prompt_sha256": "f0b81f9c953abb200cee3a20f22c11c0d2da797af13eb38cb70ca056f916917c"
+    },
+    "batch-08": {
+      "input_sha256": "0a2efdd44ed3cdf5323bb6bc0553e06fdcb8bbdbe3d4010069542a24e69d795d",
+      "prompt_sha256": "092f1277df127d0f4503dd76a90c87d0590fa51eda7b0ad9a269f458d88b5b32"
+    },
+    "batch-09": {
+      "input_sha256": "18ce46632acdbb18087d7d232fa93d417e806e748d9896513b704ac9204dad98",
+      "prompt_sha256": "178924b4bdb5b9b3752ad4d816f1c78caf05f25d513fa8577388cea2238a2d8d"
+    }
+  },
+  "prior_comparison": "exact Python float equality; no tolerance"
+}

@@ -1,8 +1,20 @@
 # YouAreBot — рубежный контроль
 
-## Точный повтор отправленного ансамбля
+## Основной сценарий: обучение и полный ансамбль
 
-Минимальный пакет — **[`project/ensemble/`](project/ensemble/)**. Запуск: `python3 project/ensemble/run.py`. Он собирает тот же CSV #10588 из настоящих сохранённых вероятностей CatBoost и LLM, проверяет SHA-256 и не требует сторонних Python-библиотек. Это deterministic replay, не новое обучение или свежий LLM-инференс. Исследовательские материалы ниже в этот минимальный пакет не входят.
+Основной entry point — **[`project/run_ensemble.py`](project/run_ensemble.py)**; shell-wrapper — `project/run_ensemble.sh`. Обработка исходных данных и обучение выполняются заново, затем добавляется LLM-компонент и фиксированная смесь 50/50. Режим LLM задаётся явно:
+
+```bash
+# Обучение с нуля + сохранённые ответы LLM, связанные с теми же входами.
+./project/run_ensemble.sh --data-dir /path/to/contest --llm-mode cached
+
+# Обучение с нуля + новые запросы к внешней LLM.
+./project/run_ensemble.sh --data-dir /path/to/contest --llm-mode fresh
+```
+
+Cached предназначен для точного повторения прежнего CSV; fresh воспроизводит метод, но не гарантирует одинаковые ответы внешней модели и тот же public score. Для fresh нужен авторизованный **Codex CLI 0.163.0**, модель **gpt-6.1-sol**. Аккаунт и секреты в пакет не входят. Автоматического перехода между режимами нет. Подробности — [`project/ENSEMBLE.md`](project/ENSEMBLE.md).
+
+Отдельный минимальный **арифметический replay** сохранён в [`project/ensemble/`](project/ensemble/): `python3 project/ensemble/run.py`. Он не обучает модели и не заменяет основной эксперимент для рубежного контроля.
 
 Учебный проект по определению ботов в диалогах: EDA, модели, прототипы, схема будущего сервиса и воспроизводимый offline-эксперимент.
 
@@ -10,7 +22,7 @@
 
 **[HTML-отчёт: `project/report.html`](project/report.html)** — самостоятельная HTML-страница, не PowerPoint. Скачайте репозиторий и откройте файл в браузере: графики и оформление не требуют CDN или доступа к сети.
 
-- **[Запуск эксперимента и трекинг](project/README.md)** — основной README с командами и границами воспроизведения.
+- **[Запуск ансамбля и трекинг](project/ENSEMBLE.md)** — основной эксперимент. [CatBoost-компонент](project/README.md) описан отдельно.
 - [`project/requirements.lock`](project/requirements.lock) — зафиксированные зависимости основного эксперимента.
 - [`project/evidence/session-facts.json`](project/evidence/session-facts.json) — пересчитанные агрегаты официальных данных и привязка исторических метрик к источникам.
 - [`project/evidence/history/`](project/evidence/history/) — исходные исторические отчёты.
@@ -21,12 +33,14 @@
 После подготовки Python-зависимостей и распаковки официальных данных:
 
 ```bash
-./project/run.sh --data-dir /path/to/contest
+./project/run_ensemble.sh --data-dir /path/to/contest --llm-mode cached
 ```
 
-Одна команда проходит загрузку и проверки данных, EDA, grouped 5-fold CV фиксированного CatBoost baseline, обучение на полном TRAIN, создание TEST CSV и проверку сохранённых моделей. Параметры, метрики, версии, хеши и артефакты фиксируются в SQLite и JSON. Конкретные выходные пути и команды просмотра трекера описаны в `project/README.md`.
+Одна команда проходит загрузку и проверки данных, EDA, grouped 5-fold CV CatBoost, обучение на полном TRAIN, blind TRAIN-only retrieval, LLM-этап выбранного режима, смесь 50/50 и конечный CSV. Параметры, метрики, версии, хеши, режим LLM и артефакты фиксируются в SQLite и JSON. Каждый запуск создаёт отдельный каталог; существующие результаты не перезаписываются. Зависимости и официальные данные готовятся заранее. Основной HTML — статический отчёт; его пересборка: `python3 project/tools/build_html.py --check`.
 
-**Фактически проверено на отдельной standalone-копии:** run `native-reproduction-01`, OOF LogLoss **0.16919850572003053**, 2416 OOF-строк и 758 TEST-строк. Все шесть checkpoints дали точный replay. SQL/JSON readback: `FINISHED`, 15 групп записей параметров, 12 метрик, 30 индексированных артефактов. [Доказательство запуска](project/evidence/reproduction-proof.json); [сохранённые результаты](project/evidence/reproduction/). Unit-тесты: **15 passed**. Чистая установка зависимостей на другом компьютере не проверялась.
+**Полный ансамбль реально проверен в обоих режимах из standalone-копии:** `ensemble-cached-qa-v1` и `ensemble-fresh-qa-v1`, оба `FINISHED`, по шесть новых native fits и 758 TEST-строк. Cached точно повторил исторический CSV; fresh выполнил десять новых LLM-вызовов для всех 379 диалогов. Родительский SQL/JSON tracker каждого запуска содержит 28 групп параметров и 12 CatBoost-метрик; индексы — 114 / 163 артефакта соответственно. [Доказательство](project/evidence/ensemble-proof.json), [cached evidence](project/evidence/ensemble-cached/), [fresh evidence](project/evidence/ensemble-fresh/). CSV fresh отличается от исторического и на соревнование не отправлялся; нового public score нет. Распакованный минимальный full-chain ZIP также прошёл обучение и точную cached-сборку: [ZIP proof](project/evidence/ensemble-zip-proof.json).
+
+Отдельно проверен CatBoost-компонент: `native-reproduction-01`, OOF LogLoss **0.16919850572003053** на 2416 development rows; все шесть checkpoints дали точный replay. [Предыдущее доказательство](project/evidence/reproduction-proof.json). Чистая установка зависимостей на другом компьютере не проверялась.
 
 Данные берутся из [официального соревнования](https://stackmorelayers.ai/competitions/you-are-bot). Сырые диалоги, веса pretrained-моделей и аккаунтные данные **не включены** в Git. Никаких отправок на платформу скрипт не делает.
 
@@ -41,7 +55,7 @@
 
 Историческая отправка **#10588** получила **public LogLoss 0.1303426569**. Последнее сохранённое наблюдение рейтинга — **5-е место**, время строки платформы **23/10/2026, 18:40**. Это не утверждение о текущем рейтинге, private score или первом месте.
 
-Основной воспроизводимый эксперимент — **native baseline**, исторический development LogLoss **0.16919850572003053**. Он не выдаётся за повторное получение официального результата LLM-ансамбля. Новый LLM-инференс, оптимизация моделей и дополнительные отправки в этот пакет не входят. HTTP-сервис в HTML показан как **эскиз архитектуры**, а не развёрнутый backend.
+CatBoost-компонент имеет исторический development LogLoss **0.16919850572003053**. Эта OOF-метрика не выдаётся за качество всего ансамбля. Public score локально не пересчитывается. Воспроизведение фиксированного метода не является новым поиском моделей: HPO, изменение весов по результату и дополнительные contest uploads не выполняются. HTTP-сервис в HTML показан как **эскиз архитектуры**, а не развёрнутый backend.
 
 ## Требования рубежного контроля
 
@@ -49,8 +63,9 @@
 |---|---|
 | EDA и особенности данных — 2 балла | HTML, пересчитанные агрегаты, аудит представления |
 | Идея, модели, прототипы и архитектура — 2 балла | HTML, исходники baseline и архив прототипов |
-| Код в `project/`, end-to-end одним скриптом | `project/run.sh`, `project/run.py`, `project/src/`, тесты |
+| Код в `project/`, end-to-end одним скриптом | `project/run_ensemble.sh`, `project/run_ensemble.py`, `project/src/`, `project/llm/`, тесты |
 | Зафиксированные зависимости — 1 балл | `project/requirements.lock` |
 | Трекинг всех параметров — 3 балла | SQLite/JSON нового запуска и исторические отчёты с provenance |
+| Обработка данных и обучение в Python — 2 балла | `project/run_ensemble.py`, `project/src/eda.py`, `project/src/pipeline.py`, `project/src/experiment.py` |
 
 Это соответствие материалов критериям, не обещание оценки. Репозиторий приватный: для проверки преподавателю потребуется доступ.

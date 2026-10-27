@@ -1,0 +1,14 @@
+{
+  "archive": "you-are-bot-full-ensemble.zip",
+  "archive_sha256": "e33cd63b5fd948dc9aadda0826e93616983920520dcb1beb71341c3f5a8c2d79",
+  "archive_bytes": 156996,
+  "inventory_files": 36,
+  "crc_and_source_member_parity": true,
+  "actual_extracted_zip_run_id": "ensemble-cached-from-zip-v1",
+  "trained_from_raw": true,
+  "native_training_fits": 6,
+  "llm_mode": "cached",
+  "reconstructed_csv_sha256": "4bde02a00f00d009ad69c3aa967c00e468a41c0bcb2b90f65b93416abb3d4639",
+  "status": "FINISHED",
+  "no_new_llm_calls_in_cached_mode": true
+}

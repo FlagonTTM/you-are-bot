@@ -1,0 +1,22 @@
+{
+  "artifact": "project/report.html",
+  "artifact_sha256": "b346979a0fdd24c109d310946f924c024175f7b3bcc4e056aeeefb85a8c1d7e0",
+  "browser_method": "direct opencli --profile v55e6gvm browser --session coursework-ensemble",
+  "opencli_version": "2.0.2",
+  "url": "http://127.0.0.1:61394/report.html",
+  "exact_http_bytes_match_local": true,
+  "viewport": {"width": 1720, "height": 950, "device_pixel_ratio": 2},
+  "content_parity": "PASS: 14 sections, 7 SVGs, 49 unique IDs, 22 SHA-bound sources, exact chart values and rubric Python-training item",
+  "runtime": "PASS: expected title, both actual run IDs, both VERIFIED mode rows; console messages count 0",
+  "layout": {"document_scroll_width": 1720, "document_client_width": 1720, "body_font_px": 22, "all_14_sections_visible": true, "global_horizontal_overflow": false},
+  "navigation": "PASS: real TOC click led to #reproduction, section top=56.09375",
+  "screenshot": "project/evidence/html-ensemble-reproduction.png",
+  "screenshot_sha256": "a50ca855f566a34cfc51fc52bf158b1ac6c2396c99af94eb543d94b35db9e5a6",
+  "readability": "PASS in captured reproduction viewport: both cached/fresh rows visible and readable; no overlap or unintended clipping. Remaining content is intentionally vertically scrollable.",
+  "sources_dialog_retest": "BLOCKED: OpenCLI 2.0.2 native-input visibility guard refused the click, including after foreground reopen. Not replaced with JS click or a different browser. Existing dialog JS was not changed.",
+  "code_unit_review": "ACCEPTED_FOR_NEXT_STAGE for source/unit scope; separate real cached/fresh execution verified by parent",
+  "real_run_proof": "project/evidence/ensemble-proof.json",
+  "actual_extracted_zip_proof": "project/evidence/ensemble-zip-proof.json",
+  "automated_tests": {"passed": 63, "scope": "native, ensemble, report rubric and saved-component replay"},
+  "production_readiness": "NOT_CLAIMED"
+}

@@ -1,0 +1,41 @@
+{
+  "catboost_oof_metrics": {
+    "auc": 0.98174990051731,
+    "logloss": 0.16919850572003053
+  },
+  "counts": {
+    "llm_batches": 10,
+    "test_participants": 758,
+    "training_participants": 3032
+  },
+  "ensemble_cv_evaluated": false,
+  "ensemble_cv_note": "No LLM OOF labels/predictions generated; CatBoost OOF is NOT ensemble CV.",
+  "fresh_official_score": null,
+  "historical_csv_matches": true,
+  "historical_hash_is_success_gate": true,
+  "historical_public_logloss": "0.1303426569",
+  "llm_mode": "cached",
+  "native_subrun": "native/catboost",
+  "native_training_fits": 6,
+  "public_score_recomputed_locally": false,
+  "raw_payload_policy": "Local ignored outputs only; do not export raw texts/events to Git or evidence bundle.",
+  "run_id": "ensemble-cached-qa-v1",
+  "runtime_seconds": 31.020687041804194,
+  "schema": "coursework.ensemble.v1",
+  "submitted": false,
+  "synthetic_fixture": false,
+  "test_labels_read": false,
+  "test_payloads_blind": true,
+  "tracking_backend": "stdlib SQLite + JSON (not MLflow)",
+  "validation": {
+    "encoding": "UTF-8",
+    "line_terminator": "CRLF",
+    "rows": 758,
+    "sha256": "4bde02a00f00d009ad69c3aa967c00e468a41c0bcb2b90f65b93416abb3d4639",
+    "submitted": false,
+    "weights": {
+      "catboost": 0.5,
+      "llm": 0.5
+    }
+  }
+}

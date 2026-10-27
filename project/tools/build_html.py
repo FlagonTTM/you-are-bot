@@ -352,6 +352,22 @@ def build_document(project: Path) -> tuple[str, dict]:
     proof = evidence.read(proof_path, "Новый реальный запуск coursework") if (project / proof_path).is_file() else None
     verified, proof_label = proof_state(proof)
     tracking = proof.get("tracking", {}) if isinstance(proof, dict) else {}
+    ensemble_path = "evidence/ensemble-proof.json"
+    ensemble_proof = evidence.read(ensemble_path, "Полный запуск CatBoost + LLM из исходных данных") if (project / ensemble_path).is_file() else None
+    if ensemble_proof is not None and ensemble_proof.get("schema") != "coursework.ensemble-proof.v1":
+        raise ValueError("UNKNOWN: unsupported ensemble proof schema")
+    ensemble_states = {}
+    for mode in ("cached", "fresh"):
+        entry = (ensemble_proof or {}).get(mode, {})
+        valid = entry.get("status") == "VERIFIED" and entry.get("trained_from_raw") is True
+        if mode == "cached":
+            valid = valid and entry.get("csv_sha256") == official["artifact_sha256"]
+        else:
+            valid = valid and entry.get("fresh_llm_completed") is True
+        ensemble_states[mode] = ("VERIFIED" if valid else "НЕ ПОДТВЕРЖДЁН", entry)
+    for source_path in ("run_ensemble.py", "run_ensemble.sh", "src/pipeline.py", "src/eda.py", "requirements.lock"):
+        if (project / source_path).is_file():
+            evidence.read(source_path, "Исполняемый код / зависимости: " + source_path)
     built_date = dt.datetime.now(dt.timezone.utc).date().isoformat()
     sections = []
     titles = []
@@ -494,7 +510,7 @@ def build_document(project: Path) -> tuple[str, dict]:
         '<p class="takeaway">Закрыт этот recipe, не семейство методов. Ресурсный сбой — не положительный результат качества.</p>',
         [facts_path, encoder_path], "development5fold ≠ pilot_fold0", contour="development5fold + singlefold-negative")
 
-    command = "./project/run.sh --data-dir /path/to/contest"
+    command = "./project/run_ensemble.sh --data-dir /path/to/contest --llm-mode cached"
     status_html = f'<span class="{"verified" if verified else "pending"}">{h(proof_label)}</span>'
     if verified:
         proof_detail = (f'<p class="proof-value">run_id: {h(proof["run_id"])}</p>'
@@ -502,17 +518,28 @@ def build_document(project: Path) -> tuple[str, dict]:
                         f'<p class="caption">{number(proof.get("seconds"),3)} с · 6 checkpoints: exact replay.<br>AUC {number(proof.get("oof_auc"),9)}.</p>')
     else:
         proof_detail = '<p>Нет подтверждённого end-to-end результата.<br>Ожидается reproduction-proof.json.</p>'
-    proof_sources = [proof_path] if proof is not None else [facts_path]
-    add("reproduction", "воспроизводимость", "Одна команда. Только native baseline.",
+    proof_sources = ([ensemble_path] if ensemble_proof is not None else []) + ([proof_path] if proof is not None else [facts_path])
+    mode_table = '<table><thead><tr><th>LLM-режим</th><th>Что выполняется</th><th>Проверка</th></tr></thead><tbody>'
+    for mode in ("cached", "fresh"):
+        state, entry = ensemble_states[mode]
+        description = ('Обработка и обучение с нуля + сохранённые ответы LLM, привязанные к тем же входам и prior. Точный повтор CSV.' if mode == "cached" else 'Обработка и обучение с нуля + новые запросы к LLM. Тот же рецепт, но не обещание тех же ответов / public score.')
+        mode_table += f'<tr><td class="mono">--llm-mode {mode}</td><td>{h(description)}</td><td>{h(state)}<br>{h(entry.get("run_id", ""))}</td></tr>'
+    mode_table += '</tbody></table>'
+    add("reproduction", "воспроизводимость", "Весь ансамбль — одним запуском.",
         f'<code class="command">{h(command)}</code>'
+        '<p class="caption">Свежий LLM-этап: замените флаг на <code>--llm-mode fresh</code>. Режим выбирается явно; скрытого перехода к кэшу нет.</p>'
         '<div class="flowline"><span>Входы<small>validate / EDA</small></span><b>→</b><span>Group CV<small>OOF · 5 folds</small></span><b>→</b>'
-        f'<span>Full refit<small>{tr["participant_rows"]} TRAIN-меток</small></span><b>→</b><span>Экспорт<small>{te["participant_rows"]} TEST-строк</small></span><b>→</b>'
-        '<span>Проверка<small>checkpoint replay</small></span></div>'
+        f'<span>Full refit<small>{tr["participant_rows"]} TRAIN-меток</small></span><b>→</b><span>LLM<small>TRAIN-only retrieval</small></span><b>→</b>'
+        f'<span>50 / 50<small>{te["participant_rows"]} TEST-строк + tracker</small></span></div>'
+        + mode_table +
+        '<p>Обработка данных и обучение · Python: <code>run_ensemble.py</code> → <code>src/eda.py</code>, <code>src/pipeline.py</code>, <code>src/experiment.py</code>.</p>'
+        '<p class="caption">Python-зависимости зафиксированы в <code>requirements.lock</code>. Для fresh дополнительно нужен авторизованный Codex CLI 0.163.0; модель gpt-6.1-sol, reasoning high. Установка зависимостей и получение официальных данных — явные предварительные шаги.</p>'
+        '<h3>Отдельно: проверка CatBoost-компонента</h3>'
         f'<div class="proof"><div class="stack tight">{status_html}{proof_detail}</div>'
         '<div class="stack tight"><p>Код — внутри project/.<br>Зависимости — exact pinned.</p>'
         '<p class="caption">Сырые данные и веса не в Git. Путь к официальным входам задаётся явно.</p>'
-        '<p class="caption muted">Новый CSV не равен исторической лучшей LLM-смеси. Её public-score этим запуском не воспроизводится.</p></div></div>',
-        proof_sources, "Новый запуск ≠ историческая отправка", contour="new-native-reproduction")
+        '<p class="caption muted">Эти OOF-метрики относятся к CatBoost, не к ансамблю. Public score локально не пересчитывается. Простой replay <code>ensemble/run.py</code> не заменяет этот эксперимент с обучением.</p></div></div>',
+        proof_sources, "Raw-data ensemble / cached и fresh проверяются раздельно", contour="ensemble-reproduction")
 
     def tracked(key: str) -> str:
         return h(tracking.get(key, "UNKNOWN")) if verified else "PENDING"
@@ -520,8 +547,18 @@ def build_document(project: Path) -> tuple[str, dict]:
     utc_time = (proof.get("finished_at_utc") or proof.get("finished_at") or tracking.get("finished_at_utc") or proof.get("verified_at_utc") or "UNKNOWN") if verified else "PENDING"
     tracking_count_text = (f'{number(tracking["logged_parameters"])} групп записей параметров · {number(tracking["logged_metrics"])} метрик · {number(tracking["logged_artifacts"])} артефактов'
                            if verified else "Количество записей: PENDING")
+    ensemble_tracking_table = '<table><thead><tr><th>Ансамбль</th><th>SQL-статус</th><th>Группы параметров / метрики / артефакты</th></tr></thead><tbody>'
+    for mode in ("cached", "fresh"):
+        state, entry = ensemble_states[mode]
+        recorded = entry.get("tracking", {})
+        counts = ' / '.join(number(recorded.get(k)) for k in ("parameter_groups", "metrics", "artifacts"))
+        ensemble_tracking_table += f'<tr><td>{h(mode)}<br><span class="mono">{h(entry.get("run_id", ""))}</span></td><td>{h(recorded.get("status", state))}</td><td>{h(counts)}</td></tr>'
+    ensemble_tracking_table += '</tbody></table>'
     add("tracking", "трекер экспериментов", "SQLite + JSON. Не макет MLflow.",
-        '<div class="two equal align-top"><div class="stack"><div class="tracking-record"><p class="caption">НОВЫЙ COURSEWORK-ЗАПУСК</p><dl>'
+        '<p>Полный ансамбль фиксирует режим LLM, модель, prompt / retrieval / source hashes, веса смеси, параметры обучения, зависимости, метрики и артефакты в собственном запуске. Подтверждение cached / fresh — в разделе выше.</p>'
+        + ensemble_tracking_table +
+        '<p class="caption">Фиксируются все параметры, доступные в нашем коде и CLI. Скрытые server-side настройки и ревизия весов внешней LLM не доступны; побайтовая повторяемость fresh не обещается.</p>'
+        '<div class="two equal align-top"><div class="stack"><div class="tracking-record"><p class="caption">ПРОВЕРЕННЫЙ CATBOOST-КОМПОНЕНТ</p><dl>'
         f'<dt>run_id</dt><dd>{h(proof["run_id"]) if verified else "PENDING"}</dd>'
         f'<dt>status</dt><dd>{tracked("run_status")}</dd><dt>Проверено UTC</dt><dd>{h(utc_time)}</dd>'
         f'<dt>backend</dt><dd>{tracked("backend")}</dd><dt>database</dt><dd>{tracked("database")}</dd></dl></div><p class="caption">{tracking_count_text}</p><p class="caption">Включая 6 полных словарей effective model params; это не число scalar-параметров.</p>'
@@ -541,7 +578,10 @@ def build_document(project: Path) -> tuple[str, dict]:
         '<div class="two equal align-top"><div class="stack tight"><p class="caption">СООТВЕТСТВИЕ КРИТЕРИЯМ, НЕ ОБЕЩАНИЕ ОЦЕНКИ</p>'
         '<table class="rubric"><tbody><tr><td>EDA · структура, классы, длины</td><td>2</td></tr>'
         '<tr><td>Идея / модели / эскиз сервиса</td><td>2</td></tr><tr><td>Зависимости / locked recipe</td><td>1</td></tr>'
-        '<tr><td>Трекинг параметров и артефактов</td><td>3</td></tr></tbody></table>'
+        '<tr><td>Трекинг параметров и артефактов</td><td>3</td></tr>'
+        '<tr><td>Обработка данных и обучение · Python</td><td>2</td></tr>'
+        '<tr><td>Код в project/ · end-to-end одним скриптом</td><td>—</td></tr></tbody></table>'
+        '<p class="caption">Основной entry point: <code>run_ensemble.py</code>; один shell-запуск — <code>run_ensemble.sh</code>.</p>'
         f'<p class="caption" style="margin-top:14px">Native reproduction: {"VERIFIED" if verified else "PENDING"}.</p>'
         f'<a class="repo-link" href="{REPO}" target="_blank" rel="noopener noreferrer">FlagonTTM/you-are-bot ↗</a>'
         f'<a class="repo-link" href="{REPO}/tree/{BRANCH}/project" target="_blank" rel="noopener noreferrer">feature/coursework-html / project ↗</a>'
@@ -569,7 +609,7 @@ def build_document(project: Path) -> tuple[str, dict]:
                        + f'<p>membership v2<code class="digest">SHA-256 {h(facts["membership_sha256"])}</code></p></li>')
     payload = {"schema": SCHEMA, "facts": facts, "sources": ledger, "build_date_utc": built_date,
                "development_slices": {"short_2_5": short, "long_10_plus": long},
-               "reproduction_proof": proof, "proof_verified": verified, "browser_qa": "PENDING_PARENT_OPENCLI"}
+               "reproduction_proof": proof, "ensemble_proof": ensemble_proof, "proof_verified": verified, "browser_qa": "PENDING_PARENT_OPENCLI"}
     toc_labels = ["Задача и реальный пример", "Постановка и метрика", "Структура данных", "Классы и пары", "Длины диалогов", "Групповая валидация", "Признаки и native recipe", "Шесть моделей / один CV", "Историческая LLM-ветка", "Отрицательные результаты", "Реальный standalone-запуск", "SQLite + JSON tracking", "Эскиз HTTP-сервиса", "Итоги и критерии"]
     source_body = ('<p style="margin-top:24px">Все числа загружены из локальных evidence. HTML работает без сети; ссылки открываются только по действию читателя. Для private GitHub нужен доступ.</p>'
                    '<p style="margin-top:16px">Development 5-fold, confirmation, pilot fold 0 и official public — разные оценки. Их нельзя ранжировать одной шкалой «прогресса».</p>'
@@ -654,7 +694,7 @@ class ReportParser(HTMLParser):
 def validate_document(document: str, facts: dict | None = None) -> dict:
     parser = ReportParser()
     parser.feed(document)
-    tuple(parser.sections) == SECTION_IDS, "exactly 14 stable section IDs required"
+    assert tuple(parser.sections) == SECTION_IDS, "exactly 14 stable section IDs required"
     assert len(parser.ids) == len(set(parser.ids)), "duplicate IDs"
     assert '<title>HTML-отчёт' in document and '<h1 id="heading-question" tabindex="-1">HTML-отчёт' in document
     assert document.count('data-section=') == len(SECTION_IDS), "anchor TOC must cover all sections"
